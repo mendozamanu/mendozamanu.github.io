@@ -21,15 +21,15 @@ subtitle = ""
   description = "Conocimiento avanzado"
   
 [[feature]]
-  icon = "chart-line"
-  icon_pack = "fas"
-  name = "Statistics"
-  description = "100%"  
+  icon = "aws"
+  icon_pack = "fab"
+  name = "Amazon Web Services"
+  description = "Conocimiento intermedio"  
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "comments"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "Inglés"
+  description = "Nivel avanzado (FCE con nivel de C1)"
 
 +++
