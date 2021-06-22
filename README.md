@@ -1,1 +1,0 @@
-mendozamanu.github.io
