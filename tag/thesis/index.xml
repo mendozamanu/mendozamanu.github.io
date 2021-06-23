@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Portfolio</title>
-    <link>/</link>
-      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <description>Portfolio</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <title>thesis | Portfolio</title>
+    <link>/tag/thesis/</link>
+      <atom:link href="/tag/thesis/index.xml" rel="self" type="application/rss+xml" />
+    <description>thesis</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 23 Jun 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_512x512_fill_lanczos_center_2.png</url>
-      <title>Portfolio</title>
-      <link>/</link>
+      <title>thesis</title>
+      <link>/tag/thesis/</link>
     </image>
-    
-    <item>
-      <title>Survey on mobility data. A supervised classification approach for area identification</title>
-      <link>/publication/milan/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>/publication/milan/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Computer Science PhD thesis</title>
@@ -60,40 +52,6 @@ The objective of the third and fourth year will be to apply the proposed methods
 &lt;p&gt;[4] Raun, J. 2020. Mobile positioning data for tourism destination studies and statistics. Supervisors: Anto Aasa, Rein Ahas (2015-2018), Noam Shoval; Department of Geography, Institute of Ecology and Earth Sciences, Faculty of Science and Technology, University of Tartu, Estonia&lt;/p&gt;
 &lt;p&gt;[5] Du, Z., Yang, Y., Ertem, Z. et al. Inter-urban mobility via cellular position tracking in the southeast Songliao Basin, Northeast China. Sci Data 6, 71 (2019).&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Milan mobility project</title>
-      <link>/project/milan/</link>
-      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>/project/milan/</guid>
-      <description>&lt;p&gt;In this project we made a comparative study between clustering analysis,
-which is typically used in mobility scenarios, and supervised classifica-
-tion for the identification of home and work zones of an area. We will use
-a mobility dataset from the city of Milan to achieve this. Using passive
-mobile positioning data offers a powerful tool to study the geography
-and the mobility of the population. With the available data, we will try to
-identify workplaces and residential areas using both supervised classifica-
-tion and clustering. In order to generate training data for the classification
-model, we manually label several sub-regions of the available grid, one
-with random cells and another with a 20-by-20 resolution. Experimental
-results show that the kNN algorithm provides an acceptable accuracy
-that could be able to predict if a cell represent a working or a residential
-area for the full grid, thanks to the semi-supervised approach used in
-learning from a manually-labeled region. However, the results provided
-with k-means and k-medoids clustering show that it is not able to accom-
-plish the former idea, instead it focuses on identifying the mobile traffic
-distribution around the city.&lt;/p&gt;
-&lt;p&gt;The experiment and its results are available in the Github repository linked.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/admin/config.yml</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/admin/config.yml</guid>
-      <description></description>
     </item>
     
   </channel>

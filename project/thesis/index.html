@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="Data and experiments used for the conference paper." />
+  <meta name="description" content="Identification of mobility patterns using advanced artificial intelligence techniques applied to mobile phone data." />
 
   
-  <link rel="alternate" hreflang="en-us" href="/project/milan/" />
+  <link rel="alternate" hreflang="en-us" href="/project/thesis/" />
 
   
 
@@ -272,7 +272,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_32x32_fill_lanczos_center_2.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_180x180_fill_lanczos_center_2.png" />
 
-  <link rel="canonical" href="/project/milan/" />
+  <link rel="canonical" href="/project/thesis/" />
 
   
   
@@ -289,18 +289,18 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="Portfolio" />
-  <meta property="og:url" content="/project/milan/" />
-  <meta property="og:title" content="Milan mobility project | Portfolio" />
-  <meta property="og:description" content="Data and experiments used for the conference paper." /><meta property="og:image" content="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_512x512_fill_lanczos_center_2.png" />
+  <meta property="og:url" content="/project/thesis/" />
+  <meta property="og:title" content="Computer Science PhD thesis | Portfolio" />
+  <meta property="og:description" content="Identification of mobility patterns using advanced artificial intelligence techniques applied to mobile phone data." /><meta property="og:image" content="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_512x512_fill_lanczos_center_2.png" />
     <meta property="twitter:image" content="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2021-04-01T00:00:00&#43;00:00"
+        content="2021-06-23T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2021-04-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-06-23T00:00:00&#43;00:00">
   
 
   
@@ -322,12 +322,12 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/project/milan/"
+    "@id": "/project/thesis/"
   },
-  "headline": "Milan mobility project",
+  "headline": "Computer Science PhD thesis",
   
-  "datePublished": "2021-04-01T00:00:00Z",
-  "dateModified": "2021-04-01T00:00:00Z",
+  "datePublished": "2021-06-23T00:00:00Z",
+  "dateModified": "2021-06-23T00:00:00Z",
   
   "publisher": {
     "@type": "Organization",
@@ -337,7 +337,7 @@
       "url": "/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Data and experiments used for the conference paper."
+  "description": "Identification of mobility patterns using advanced artificial intelligence techniques applied to mobile phone data."
 }
 </script>
 
@@ -353,11 +353,11 @@
 
 
 
-  <title>Milan mobility project | Portfolio</title>
+  <title>Computer Science PhD thesis | Portfolio</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="5615cbe68b79d00de4e0398bbb9fd409" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="5ec7462a205ac475b3716bc3f67e42ef" >
 
   
   
@@ -524,7 +524,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Milan mobility project</h1>
+  <h1>Computer Science PhD thesis</h1>
 
   
 
@@ -543,7 +543,7 @@
     
       
     
-    Apr 1, 2021
+    Jun 23, 2021
   </span>
   
 
@@ -626,24 +626,40 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>In this project we made a comparative study between clustering analysis,
-which is typically used in mobility scenarios, and supervised classifica-
-tion for the identification of home and work zones of an area. We will use
-a mobility dataset from the city of Milan to achieve this. Using passive
-mobile positioning data offers a powerful tool to study the geography
-and the mobility of the population. With the available data, we will try to
-identify workplaces and residential areas using both supervised classifica-
-tion and clustering. In order to generate training data for the classification
-model, we manually label several sub-regions of the available grid, one
-with random cells and another with a 20-by-20 resolution. Experimental
-results show that the kNN algorithm provides an acceptable accuracy
-that could be able to predict if a cell represent a working or a residential
-area for the full grid, thanks to the semi-supervised approach used in
-learning from a manually-labeled region. However, the results provided
-with k-means and k-medoids clustering show that it is not able to accom-
-plish the former idea, instead it focuses on identifying the mobile traffic
-distribution around the city.</p>
-<p>The experiment and its results are available in the Github repository linked.</p>
+      <p><strong>Briefing and starting hypothesis</strong></p>
+<p>The widespread use of cell phones has made them a very useful tool for collecting positioning data and extracting knowledge applicable to different fields such as: telephone networks, marketing, urban planning, epidemiology, service planning, public transport, etc.
+This positioning data can be obtained using the GPS of the cell phone itself, the proximity to a radio frequency beacon (RF-beacon) such as a WiFi antenna or beacon, or through the anonymized Call Detail Record (CDR) data stored by cell phone network operators.
+Although the positioning accuracy using CDR can be between 100 and 1000 meters, the amount of information records they provide makes them a very useful tool for identifying population patterns such as places of work, leisure, home, commuting, etc.
+places of work, leisure, home, commuting, tourism, etc.
+The importance of identifying mobility patterns is essential when planning an attractive public transport system that discourages the use of private vehicles.
+This will help to identify the number of potential users who at a given time need transport from point A to B, to respond to the demand and to discourage the use of private transport.
+The study of public transport mobility data can help to locate bottlenecks and implement solutions such as the creation of lanes for public transport, automatic opening of traffic lights when public transport is approaching, elimination of intermediate stops or special services during peak hours, etc. All these measures would be aimed at favoring the speed of public transport over the private alternative.
+Although the information from the CDRs does not make it possible to address all these objectives at present, it can be used as a starting point for a first phase.
+The success of such a service would make it possible to implement more complete solutions based on the fact that users would allow the administration to reliably trace their usual movements through a mobile urban or interurban mobility service that, through an APP, would even allow them to reserve a seat on a specific transport, be identified when entering for payment or compensation, etc.</p>
+<p><strong>Background</strong></p>
+<p>The information that can be extracted from mobile devices is a very large source of data, and organizations such as the GSMA promote initiatives to use artificial intelligence and big data techniques to improve society, with use cases in which, thanks to big data techniques in mobile technologies, it has been possible to predict air pollution levels in Sao Paulo, identify outbreaks of tuberculosis in India or respond quickly to natural disasters in Japan [1].
+Recently, numerous multinational companies such as Apple, Google or Waze have published mobility reports during the COVID-19 pandemic [2] that make it possible to see how travel has changed during that period. These reports can help health authorities to make key decisions to combat COVID-19.
+Another example of the usefulness of analyzing mobile device positioning that has been observed has been the study of seasonal tourism, as has been done for Estonia in the paper by Rein Ahas et al. [3] or in the PhD thesis of Janika Raun [4]. Thanks to positioning information provided by the operator, it is possible to perform the analysis passively without the user having to have any sensor (GPS, WiFi, Bluetooth) or application installed. The spatio-temporal analysis carried out allows better planning of tourism in the region, expanding the transport infrastructure at the main entry points of the country or improving the connections most frequented by tourists.
+Another article related to our object of study deals with interurban mobility in northeastern China [5]. In this paper, we analyze commuting throughout the day during a week. Studying commuting between urban centers can help public institutions to improve routes and avoid traffic jams at peak hours.</p>
+<p><strong>Thesis objectives</strong></p>
+<p>The objectives of the thesis will be:</p>
+<ol>
+<li>To make an analysis of the existing population pattern identification methods based on CDRs as well as on other types of data: GPS, RF-Beacons, etc.</li>
+<li>To apply scaling, instance selection, feature selection and rebalancing techniques to improve the results of these pattern identification algorithms.</li>
+<li>Applying multi-label techniques to the identification of common locations and population movements.</li>
+<li>Apply this knowledge and techniques to public transport planning through agreements with local administrations, initially in the City Council of Cordoba.</li>
+<li>Study the feasibility of developing a mobile application to collect more accurate data on population mobility and its dissemination among citizens to improve the public transport service.</li>
+</ol>
+<p>The first year will be focused on the study of the technology and methods of location of mobile devices through the data provided by the operators. In addition, methods for identifying frequent locations based on CDRs and trajectory tracking will be studied. In this phase, comparative works between different techniques will be published.
+The second and third year will be devoted to the application of scaling techniques, instance selection, feature selection and data rebalancing to population pattern identification algorithms, as well as exploring the results of treating the problem as a multi-label problem. In this phase, work will be done proposing new methods for pattern identification.
+The objective of the third and fourth year will be to apply the proposed methods to public transport planning, with the collaboration of the Cordoba City Council. During this period, mobile developments that allow the improvement of local transportation will also be implemented.</p>
+<p><strong>Bibliography</strong></p>
+<p>[1] AI for impact. GSMA <a href="https://aiforimpacttoolkit.gsma.com/">https://aiforimpacttoolkit.gsma.com/</a>.</p>
+<p>[2] COVID-19 Mobility Data aggregator. Scraper of Google, Apple and Waze COVID-19 Mobility Reports.
+<a href="https://github.com/ActiveConclusion/COVID19_mobility/tree/v20200810005746#waze_reports">https://github.com/ActiveConclusion/COVID19_mobility/tree/v20200810005746#waze_reports</a>.</p>
+<p>[3] Rein Ahas, Anto Aasa, Ülar Mark, Taavi Pae, Ain Kull, Seasonal tourism spaces in Estonia: Case study with mobile positioning data, Tourism Management, Volume 28, Issue 3, 2007, Pages 898-910</p>
+<p>[4] Raun, J. 2020. Mobile positioning data for tourism destination studies and statistics. Supervisors: Anto Aasa, Rein Ahas (2015-2018), Noam Shoval; Department of Geography, Institute of Ecology and Earth Sciences, Faculty of Science and Technology, University of Tartu, Estonia</p>
+<p>[5] Du, Z., Yang, Y., Ertem, Z. et al. Inter-urban mobility via cellular position tracking in the southeast Songliao Basin, Northeast China. Sci Data 6, 71 (2019).</p>
 
     </div>
 
@@ -658,9 +674,9 @@ distribution around the city.</p>
   
   <a class="badge badge-light" href="/tag/mobility/">mobility</a>
   
-  <a class="badge badge-light" href="/tag/classification/">classification</a>
+  <a class="badge badge-light" href="/tag/ai/">ai</a>
   
-  <a class="badge badge-light" href="/tag/clustering/">clustering</a>
+  <a class="badge badge-light" href="/tag/thesis/">thesis</a>
   
 </div>
 
@@ -677,7 +693,7 @@ distribution around the city.</p>
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/project/milan/&amp;text=Milan%20mobility%20project" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/project/thesis/&amp;text=Computer%20Science%20PhD%20thesis" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -690,7 +706,7 @@ distribution around the city.</p>
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/project/milan/&amp;t=Milan%20mobility%20project" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/project/thesis/&amp;t=Computer%20Science%20PhD%20thesis" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -703,7 +719,7 @@ distribution around the city.</p>
       
       
       <li>
-        <a href="mailto:?subject=Milan%20mobility%20project&amp;body=/project/milan/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Computer%20Science%20PhD%20thesis&amp;body=/project/thesis/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -716,7 +732,7 @@ distribution around the city.</p>
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/project/milan/&amp;title=Milan%20mobility%20project" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/project/thesis/&amp;title=Computer%20Science%20PhD%20thesis" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -729,7 +745,7 @@ distribution around the city.</p>
       
       
       <li>
-        <a href="whatsapp://send?text=Milan%20mobility%20project%20/project/milan/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Computer%20Science%20PhD%20thesis%20/project/thesis/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -742,7 +758,7 @@ distribution around the city.</p>
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/project/milan/&amp;title=Milan%20mobility%20project" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/project/thesis/&amp;title=Computer%20Science%20PhD%20thesis" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -875,7 +891,7 @@ distribution around the city.</p>
       
       <li><a href="/publication/milan/">Survey on mobility data. A supervised classification approach for area identification</a></li>
       
-      <li><a href="/project/thesis/">Computer Science PhD thesis</a></li>
+      <li><a href="/project/milan/">Milan mobility project</a></li>
       
     </ul>
   </div>
@@ -895,117 +911,6 @@ distribution around the city.</p>
 
       
       
-      
-        <h2>Publications</h2>
-        
-          
-            
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/publication/milan/" >Survey on mobility data. A supervised classification approach for area identification</a>
-    </div>
-
-    
-    <a href="/publication/milan/"  class="summary-link">
-      <div class="article-style">
-        This paper presents a comparative study between clustering analysis, which is typically used in mobility scenarios, and supervised …
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  <span >
-      Manuel Mendoza Hurtado</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
-      Domingo Ortiz Boyer</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/milan/milan.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/milan/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/milan/">
-    Project
-  </a>
-  
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-          
-        
       
 
       
