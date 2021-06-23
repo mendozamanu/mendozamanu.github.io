@@ -7,7 +7,7 @@
     <description>mobility</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_512x512_fill_lanczos_center_2.png</url>
       <title>mobility</title>
       <link>/tag/mobility/</link>
     </image>
@@ -18,6 +18,48 @@
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
       <guid>/publication/milan/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Computer Science PhD thesis</title>
+      <link>/project/thesis/</link>
+      <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>/project/thesis/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Briefing and starting hypothesis&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The widespread use of cell phones has made them a very useful tool for collecting positioning data and extracting knowledge applicable to different fields such as: telephone networks, marketing, urban planning, epidemiology, service planning, public transport, etc.
+This positioning data can be obtained using the GPS of the cell phone itself, the proximity to a radio frequency beacon (RF-beacon) such as a WiFi antenna or beacon, or through the anonymized Call Detail Record (CDR) data stored by cell phone network operators.
+Although the positioning accuracy using CDR can be between 100 and 1000 meters, the amount of information records they provide makes them a very useful tool for identifying population patterns such as places of work, leisure, home, commuting, etc.
+places of work, leisure, home, commuting, tourism, etc.
+The importance of identifying mobility patterns is essential when planning an attractive public transport system that discourages the use of private vehicles.
+This will help to identify the number of potential users who at a given time need transport from point A to B, to respond to the demand and to discourage the use of private transport.
+The study of public transport mobility data can help to locate bottlenecks and implement solutions such as the creation of lanes for public transport, automatic opening of traffic lights when public transport is approaching, elimination of intermediate stops or special services during peak hours, etc. All these measures would be aimed at favoring the speed of public transport over the private alternative.
+Although the information from the CDRs does not make it possible to address all these objectives at present, it can be used as a starting point for a first phase.
+The success of such a service would make it possible to implement more complete solutions based on the fact that users would allow the administration to reliably trace their usual movements through a mobile urban or interurban mobility service that, through an APP, would even allow them to reserve a seat on a specific transport, be identified when entering for payment or compensation, etc.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Background&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The information that can be extracted from mobile devices is a very large source of data, and organizations such as the GSMA promote initiatives to use artificial intelligence and big data techniques to improve society, with use cases in which, thanks to big data techniques in mobile technologies, it has been possible to predict air pollution levels in Sao Paulo, identify outbreaks of tuberculosis in India or respond quickly to natural disasters in Japan [1].
+Recently, numerous multinational companies such as Apple, Google or Waze have published mobility reports during the COVID-19 pandemic [2] that make it possible to see how travel has changed during that period. These reports can help health authorities to make key decisions to combat COVID-19.
+Another example of the usefulness of analyzing mobile device positioning that has been observed has been the study of seasonal tourism, as has been done for Estonia in the paper by Rein Ahas et al. [3] or in the PhD thesis of Janika Raun [4]. Thanks to positioning information provided by the operator, it is possible to perform the analysis passively without the user having to have any sensor (GPS, WiFi, Bluetooth) or application installed. The spatio-temporal analysis carried out allows better planning of tourism in the region, expanding the transport infrastructure at the main entry points of the country or improving the connections most frequented by tourists.
+Another article related to our object of study deals with interurban mobility in northeastern China [5]. In this paper, we analyze commuting throughout the day during a week. Studying commuting between urban centers can help public institutions to improve routes and avoid traffic jams at peak hours.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Thesis objectives&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The objectives of the thesis will be:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;To make an analysis of the existing population pattern identification methods based on CDRs as well as on other types of data: GPS, RF-Beacons, etc.&lt;/li&gt;
+&lt;li&gt;To apply scaling, instance selection, feature selection and rebalancing techniques to improve the results of these pattern identification algorithms.&lt;/li&gt;
+&lt;li&gt;Applying multi-label techniques to the identification of common locations and population movements.&lt;/li&gt;
+&lt;li&gt;Apply this knowledge and techniques to public transport planning through agreements with local administrations, initially in the City Council of Cordoba.&lt;/li&gt;
+&lt;li&gt;Study the feasibility of developing a mobile application to collect more accurate data on population mobility and its dissemination among citizens to improve the public transport service.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The first year will be focused on the study of the technology and methods of location of mobile devices through the data provided by the operators. In addition, methods for identifying frequent locations based on CDRs and trajectory tracking will be studied. In this phase, comparative works between different techniques will be published.
+The second and third year will be devoted to the application of scaling techniques, instance selection, feature selection and data rebalancing to population pattern identification algorithms, as well as exploring the results of treating the problem as a multi-label problem. In this phase, work will be done proposing new methods for pattern identification.
+The objective of the third and fourth year will be to apply the proposed methods to public transport planning, with the collaboration of the Cordoba City Council. During this period, mobile developments that allow the improvement of local transportation will also be implemented.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bibliography&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;[1] AI for impact. GSMA &lt;a href=&#34;https://aiforimpacttoolkit.gsma.com/&#34;&gt;https://aiforimpacttoolkit.gsma.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;[2] COVID-19 Mobility Data aggregator. Scraper of Google, Apple and Waze COVID-19 Mobility Reports.
+&lt;a href=&#34;https://github.com/ActiveConclusion/COVID19_mobility/tree/v20200810005746#waze_reports&#34;&gt;https://github.com/ActiveConclusion/COVID19_mobility/tree/v20200810005746#waze_reports&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;[3] Rein Ahas, Anto Aasa, Ülar Mark, Taavi Pae, Ain Kull, Seasonal tourism spaces in Estonia: Case study with mobile positioning data, Tourism Management, Volume 28, Issue 3, 2007, Pages 898-910&lt;/p&gt;
+&lt;p&gt;[4] Raun, J. 2020. Mobile positioning data for tourism destination studies and statistics. Supervisors: Anto Aasa, Rein Ahas (2015-2018), Noam Shoval; Department of Geography, Institute of Ecology and Earth Sciences, Faculty of Science and Technology, University of Tartu, Estonia&lt;/p&gt;
+&lt;p&gt;[5] Du, Z., Yang, Y., Ertem, Z. et al. Inter-urban mobility via cellular position tracking in the southeast Songliao Basin, Northeast China. Sci Data 6, 71 (2019).&lt;/p&gt;
+</description>
     </item>
     
     <item>
