@@ -283,16 +283,15 @@
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="Portfolio" />
   <meta property="og:url" content="/project/milan/" />
   <meta property="og:title" content="Milan mobility project | Portfolio" />
-  <meta property="og:description" content="Data and experiments used for the conference paper." /><meta property="og:image" content="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_512x512_fill_lanczos_center_2.png" />
-    <meta property="twitter:image" content="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:description" content="Data and experiments used for the conference paper." /><meta property="og:image" content="/project/milan/featured.jpg" />
+    <meta property="twitter:image" content="/project/milan/featured.jpg" /><meta property="og:locale" content="en-us" />
   
     
       <meta
@@ -325,6 +324,10 @@
     "@id": "/project/milan/"
   },
   "headline": "Milan mobility project",
+  
+  "image": [
+    "/project/milan/featured.jpg"
+  ],
   
   "datePublished": "2021-04-01T00:00:00Z",
   "dateModified": "2021-04-01T00:00:00Z",
@@ -431,7 +434,7 @@
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Portfolio</a>
+      <a class="navbar-brand" href="/">Milan project</a>
     </div>
     
 
@@ -439,7 +442,7 @@
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Portfolio</a>
+      <a class="navbar-brand" href="/">Milan project</a>
     </div>
     
 
@@ -461,7 +464,9 @@
 
       
       
-        
+        <li class="nav-item">
+        <a class="nav-link" href="https://translate.google.com/translate?hl=en&sl=en&tl=es&u=https%3A%2F%2Fmendozamanu.github.io%2Fproject%2Fmilan" aria-label="Translate this page"><i class="fas fa-globe" aria-hidden='true'></i></a>
+      </li>
       
 
       
@@ -518,18 +523,26 @@
 
 
 
-  
+
+
+
+
+
+
+
 
   
   
+    
   
+
+
 <div class="article-container pt-3">
   <h1>Milan mobility project</h1>
 
   
 
   
-    
 
 
 <div class="article-metadata">
@@ -563,7 +576,7 @@
 
 </div>
 
-    
+  
 
 
 
@@ -611,14 +624,21 @@
   
   <a class="btn btn-outline-primary btn-page-header" href="https://github.com/mendozamanu/milan-mobility" target="_blank" rel="noopener">
     <i class="fab fa-github mr-1"></i>
-    Repository
+    Github Repository
   </a>
 
 
 </div>
 
 
-  
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 570px;">
+  <div style="position: relative">
+    <img src="/project/milan/featured_hu268389568dfda65ab08dbf980abcb531_9257723_720x0_resize_q75_lanczos.jpg" alt="" class="featured-image">
+    <span class="article-header-caption">Source: Wikipedia</span>
+  </div>
 </div>
 
 
@@ -627,23 +647,23 @@
 
     <div class="article-style">
       <p>In this project we made a comparative study between clustering analysis,
-which is typically used in mobility scenarios, and supervised classifica-
-tion for the identification of home and work zones of an area. We will use
+which is typically used in mobility scenarios, and supervised classification for the identification of home and work zones of an area. We will use
 a mobility dataset from the city of Milan to achieve this. Using passive
 mobile positioning data offers a powerful tool to study the geography
 and the mobility of the population. With the available data, we will try to
-identify workplaces and residential areas using both supervised classifica-
-tion and clustering. In order to generate training data for the classification
+identify workplaces and residential areas using both supervised classification and clustering. In order to generate training data for the classification
 model, we manually label several sub-regions of the available grid, one
 with random cells and another with a 20-by-20 resolution. Experimental
 results show that the kNN algorithm provides an acceptable accuracy
 that could be able to predict if a cell represent a working or a residential
 area for the full grid, thanks to the semi-supervised approach used in
 learning from a manually-labeled region. However, the results provided
-with k-means and k-medoids clustering show that it is not able to accom-
-plish the former idea, instead it focuses on identifying the mobile traffic
+with k-means and k-medoids clustering show that it is not able to accomplish the former idea, instead it focuses on identifying the mobile traffic
 distribution around the city.</p>
-<p>The experiment and its results are available in the Github repository linked.</p>
+<p>The experiment and its results are available in the Github repository linked.
+We have created a 20x20 and a random sub-grid in order to make the experiments, which consisted of performing a kNN classification of home-work label and later on a prediction of this label for the whole region using training data from the previously defined sub-grids.</p>
+<p>Furthermore, we analysed several clustering algorithms in order to determine if they would be able to detect home and work areas. We used k-means and k-medoids clustering and found out that the results did not provide insight about the home or working zones, instead the clustering focused on detecting the areas with more to least mobile traffic in Milan.</p>
+<p>The related publication is available at <a href="https://mendozamanu.github.io/publication/milan/" target="_blank" rel="noopener">link to paper</a></p>
 
     </div>
 
@@ -810,8 +830,8 @@ distribution around the city.</p>
       
     
     <li>
-      <a href="https://twitter.com/Mendoza15Manu" target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
+      <a href="https://www.linkedin.com/in/manuel-mendoza-hurtado-2b490611a/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
       </a>
     </li>
   
@@ -875,7 +895,7 @@ distribution around the city.</p>
       
       <li><a href="/publication/milan/">Survey on mobility data. A supervised classification approach for area identification</a></li>
       
-      <li><a href="/project/thesis/">Computer Science PhD thesis</a></li>
+      <li><a href="/project/thesis/">Identification of mobility patterns using advanced artificial intelligence techniques applied to mobile phone data</a></li>
       
     </ul>
   </div>
@@ -1000,6 +1020,11 @@ distribution around the city.</p>
   </div>
   <div class="ml-3">
     
+    
+    
+    <a href="/publication/milan/" >
+      <img src="/publication/milan/featured_hu21c02293eea885a9f0247217a86bb83d_534219_150x0_resize_q75_lanczos.jpg" alt="Survey on mobility data. A supervised classification approach for area identification" loading="lazy">
+    </a>
     
   </div>
 </div>

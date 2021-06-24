@@ -13,12 +13,11 @@
     </image>
     
     <item>
-      <title>Computer Science PhD thesis</title>
+      <title>Identification of mobility patterns using advanced artificial intelligence techniques applied to mobile phone data</title>
       <link>/project/thesis/</link>
       <pubDate>Wed, 23 Jun 2021 00:00:00 +0000</pubDate>
       <guid>/project/thesis/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Briefing and starting hypothesis&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The widespread use of cell phones has made them a very useful tool for collecting positioning data and extracting knowledge applicable to different fields such as: telephone networks, marketing, urban planning, epidemiology, service planning, public transport, etc.
+      <description>&lt;p&gt;The widespread use of cell phones has made them a very useful tool for collecting positioning data and extracting knowledge applicable to different fields such as: telephone networks, marketing, urban planning, epidemiology, service planning, public transport, etc.
 This positioning data can be obtained using the GPS of the cell phone itself, the proximity to a radio frequency beacon (RF-beacon) such as a WiFi antenna or beacon, or through the anonymized Call Detail Record (CDR) data stored by cell phone network operators.
 Although the positioning accuracy using CDR can be between 100 and 1000 meters, the amount of information records they provide makes them a very useful tool for identifying population patterns such as places of work, leisure, home, commuting, etc.
 places of work, leisure, home, commuting, tourism, etc.
@@ -27,12 +26,10 @@ This will help to identify the number of potential users who at a given time nee
 The study of public transport mobility data can help to locate bottlenecks and implement solutions such as the creation of lanes for public transport, automatic opening of traffic lights when public transport is approaching, elimination of intermediate stops or special services during peak hours, etc. All these measures would be aimed at favoring the speed of public transport over the private alternative.
 Although the information from the CDRs does not make it possible to address all these objectives at present, it can be used as a starting point for a first phase.
 The success of such a service would make it possible to implement more complete solutions based on the fact that users would allow the administration to reliably trace their usual movements through a mobile urban or interurban mobility service that, through an APP, would even allow them to reserve a seat on a specific transport, be identified when entering for payment or compensation, etc.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Background&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The information that can be extracted from mobile devices is a very large source of data, and organizations such as the GSMA promote initiatives to use artificial intelligence and big data techniques to improve society, with use cases in which, thanks to big data techniques in mobile technologies, it has been possible to predict air pollution levels in Sao Paulo, identify outbreaks of tuberculosis in India or respond quickly to natural disasters in Japan [1].
 Recently, numerous multinational companies such as Apple, Google or Waze have published mobility reports during the COVID-19 pandemic [2] that make it possible to see how travel has changed during that period. These reports can help health authorities to make key decisions to combat COVID-19.
 Another example of the usefulness of analyzing mobile device positioning that has been observed has been the study of seasonal tourism, as has been done for Estonia in the paper by Rein Ahas et al. [3] or in the PhD thesis of Janika Raun [4]. Thanks to positioning information provided by the operator, it is possible to perform the analysis passively without the user having to have any sensor (GPS, WiFi, Bluetooth) or application installed. The spatio-temporal analysis carried out allows better planning of tourism in the region, expanding the transport infrastructure at the main entry points of the country or improving the connections most frequented by tourists.
 Another article related to our object of study deals with interurban mobility in northeastern China [5]. In this paper, we analyze commuting throughout the day during a week. Studying commuting between urban centers can help public institutions to improve routes and avoid traffic jams at peak hours.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Thesis objectives&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The objectives of the thesis will be:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;To make an analysis of the existing population pattern identification methods based on CDRs as well as on other types of data: GPS, RF-Beacons, etc.&lt;/li&gt;
@@ -51,6 +48,11 @@ The objective of the third and fourth year will be to apply the proposed methods
 &lt;p&gt;[3] Rein Ahas, Anto Aasa, Ülar Mark, Taavi Pae, Ain Kull, Seasonal tourism spaces in Estonia: Case study with mobile positioning data, Tourism Management, Volume 28, Issue 3, 2007, Pages 898-910&lt;/p&gt;
 &lt;p&gt;[4] Raun, J. 2020. Mobile positioning data for tourism destination studies and statistics. Supervisors: Anto Aasa, Rein Ahas (2015-2018), Noam Shoval; Department of Geography, Institute of Ecology and Earth Sciences, Faculty of Science and Technology, University of Tartu, Estonia&lt;/p&gt;
 &lt;p&gt;[5] Du, Z., Yang, Y., Ertem, Z. et al. Inter-urban mobility via cellular position tracking in the southeast Songliao Basin, Northeast China. Sci Data 6, 71 (2019).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Projects and publications&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://mendozamanu.github.io/project/milan/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Milan mobility study&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mendozamanu.github.io/publication/milan/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Survey on mobility data. A supervised classification approach for area identification&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
@@ -60,23 +62,23 @@ The objective of the third and fourth year will be to apply the proposed methods
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
       <guid>/project/milan/</guid>
       <description>&lt;p&gt;In this project we made a comparative study between clustering analysis,
-which is typically used in mobility scenarios, and supervised classifica-
-tion for the identification of home and work zones of an area. We will use
+which is typically used in mobility scenarios, and supervised classification for the identification of home and work zones of an area. We will use
 a mobility dataset from the city of Milan to achieve this. Using passive
 mobile positioning data offers a powerful tool to study the geography
 and the mobility of the population. With the available data, we will try to
-identify workplaces and residential areas using both supervised classifica-
-tion and clustering. In order to generate training data for the classification
+identify workplaces and residential areas using both supervised classification and clustering. In order to generate training data for the classification
 model, we manually label several sub-regions of the available grid, one
 with random cells and another with a 20-by-20 resolution. Experimental
 results show that the kNN algorithm provides an acceptable accuracy
 that could be able to predict if a cell represent a working or a residential
 area for the full grid, thanks to the semi-supervised approach used in
 learning from a manually-labeled region. However, the results provided
-with k-means and k-medoids clustering show that it is not able to accom-
-plish the former idea, instead it focuses on identifying the mobile traffic
+with k-means and k-medoids clustering show that it is not able to accomplish the former idea, instead it focuses on identifying the mobile traffic
 distribution around the city.&lt;/p&gt;
-&lt;p&gt;The experiment and its results are available in the Github repository linked.&lt;/p&gt;
+&lt;p&gt;The experiment and its results are available in the Github repository linked.
+We have created a 20x20 and a random sub-grid in order to make the experiments, which consisted of performing a kNN classification of home-work label and later on a prediction of this label for the whole region using training data from the previously defined sub-grids.&lt;/p&gt;
+&lt;p&gt;Furthermore, we analysed several clustering algorithms in order to determine if they would be able to detect home and work areas. We used k-means and k-medoids clustering and found out that the results did not provide insight about the home or working zones, instead the clustering focused on detecting the areas with more to least mobile traffic in Milan.&lt;/p&gt;
+&lt;p&gt;The related publication is available at &lt;a href=&#34;https://mendozamanu.github.io/publication/milan/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link to paper&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
