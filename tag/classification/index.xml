@@ -26,23 +26,23 @@
       <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
       <guid>/project/milan/</guid>
       <description>&lt;p&gt;In this project we made a comparative study between clustering analysis,
-which is typically used in mobility scenarios, and supervised classifica-
-tion for the identification of home and work zones of an area. We will use
+which is typically used in mobility scenarios, and supervised classification for the identification of home and work zones of an area. We will use
 a mobility dataset from the city of Milan to achieve this. Using passive
 mobile positioning data offers a powerful tool to study the geography
 and the mobility of the population. With the available data, we will try to
-identify workplaces and residential areas using both supervised classifica-
-tion and clustering. In order to generate training data for the classification
+identify workplaces and residential areas using both supervised classification and clustering. In order to generate training data for the classification
 model, we manually label several sub-regions of the available grid, one
 with random cells and another with a 20-by-20 resolution. Experimental
 results show that the kNN algorithm provides an acceptable accuracy
 that could be able to predict if a cell represent a working or a residential
 area for the full grid, thanks to the semi-supervised approach used in
 learning from a manually-labeled region. However, the results provided
-with k-means and k-medoids clustering show that it is not able to accom-
-plish the former idea, instead it focuses on identifying the mobile traffic
+with k-means and k-medoids clustering show that it is not able to accomplish the former idea, instead it focuses on identifying the mobile traffic
 distribution around the city.&lt;/p&gt;
-&lt;p&gt;The experiment and its results are available in the Github repository linked.&lt;/p&gt;
+&lt;p&gt;The experiment and its results are available in the Github repository linked.
+We have created a 20x20 and a random sub-grid in order to make the experiments, which consisted of performing a kNN classification of home-work label and later on a prediction of this label for the whole region using training data from the previously defined sub-grids.&lt;/p&gt;
+&lt;p&gt;Furthermore, we analysed several clustering algorithms in order to determine if they would be able to detect home and work areas. We used k-means and k-medoids clustering and found out that the results did not provide insight about the home or working zones, instead the clustering focused on detecting the areas with more to least mobile traffic in Milan.&lt;/p&gt;
+&lt;p&gt;The related publication is available at &lt;a href=&#34;https://mendozamanu.github.io/publication/milan/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link to paper&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
