@@ -99,12 +99,23 @@
 
             <div class="article-container">
                 <h3>Abstract</h3>
-                <p class="pub-abstract">This manuscript introduces ML-proxkNN, a spatially-aware extension of
-                    multi-label kNN that integrates (i) locally adaptive neighbourhood size and (ii) spatial
-                    proximity/context via Moore neighbourhood information. Results on Milan and Trento show strong
-                    multi-label performance (up to 0.920 average precision on the combined Milan data source) and
-                    improved spatial coherence, with gains that are often incremental but consistent across metrics and
-                    validated under spatial block cross-validation.</p>
+                <p class="pub-abstract">Urban spaces often serve multiple functions simultaneously, yet traditional
+                    approaches assign a single label per location, oversimplifying mixed-use areas. We present
+                    ML-proxkNN, a multi-label k-nearest neighbours method for place identification using Call Detail
+                    Records (CDRs) that combines feature-space locality with spatial-grid locality through Moore
+                    neighbourhood relationships. The study uses CDR data from Telecom Italia covering Milan (10,000
+                    grid cells of 235 × 235 m; a 20 × 20 subgrid of 400 cells manually labelled for five categories:
+                    high, medium, and low density, home, and work) and the province of Trento (241 cells across a
+                    15 × 15 urban grid and a 4 × 4 forest grid, labelled for six categories including forest). Eight
+                    multi-label classifiers were compared using 10-fold cross-validation across nine evaluation
+                    metrics. ML-proxkNN achieves 92.0% average precision and 82.9% F1-score on the Milan combined
+                    dataset, and 90.4% average precision and 78.0% F1-score on the Trento incoming-calls dataset,
+                    leading in most metrics. Under spatial block cross-validation, which controls for spatial
+                    autocorrelation, ML-proxkNN retains its advantage with 87.6% average precision on Milan and
+                    89.0% on Trento. The results confirm that incorporating spatial grid adjacency into local-k
+                    optimisation yields consistent improvements across contrasting geographic contexts, offering a
+                    computationally efficient framework for multi-label urban function mapping using large-scale
+                    telecom data.</p>
 
                 <div class="row">
                     <div class="col-md-1"></div>
