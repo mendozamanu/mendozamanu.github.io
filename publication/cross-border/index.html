@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
     <meta name="description"
-        content="This manuscript addresses the intrinsic limitation of single-operator CDRs for cross-border analysis by leveraging geolocated social media traces. It proposes a feature-based ML pipeline for identifying cross-border commuters across three European border regions and reports up to 98% accuracy." />
+        content="Cross-border commuting is the backbone of economic integration but remains poorly measured by traditional surveys or administrative records, especially at fine spatial scales. We introduce a fully data-driven, machine-learning framework to detect and classify daily transnational commuters on the basis of geolocated social media data, achieving up to 98% overall accuracy with 78% recall and 70% precision for detecting cross-border home-work movements." />
     <link rel="alternate" hreflang="en-us" href="/publication/cross-border/" />
     <meta name="theme-color" content="#1565c0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css"
@@ -98,11 +98,21 @@
 
             <div class="article-container">
                 <h3>Abstract</h3>
-                <p class="pub-abstract">This manuscript addresses the intrinsic limitation of single-operator CDRs for
-                    cross-border analysis by leveraging geolocated social media traces. It proposes a feature-based ML
-                    pipeline for identifying cross-border commuters across three European border regions and reports up
-                    to 98% accuracy under cross-validation in distinguishing routine commuters, including a zero-shot
-                    transfer evaluation across regions.</p>
+                <p class="pub-abstract">Cross-border commuting is the backbone of economic integration but remains
+                    poorly measured by traditional surveys or administrative records, especially at fine spatial scales.
+                    In this paper, we introduce a fully data-driven, machine-learning framework to detect and classify
+                    daily transnational commuters on the basis of geolocated social media data. We focus on three
+                    European border regions—the Greater Region of Luxembourg, the Basque Country, and the Øresund
+                    Region—and obtain eighteen network and spatiotemporal features (e.g., trip frequency, origin and
+                    destination dwell times, and cross-border trips). First, we train and evaluate four state-of-the-art
+                    classifiers (CatBoost, XGBoost, random forest, and k-nearest neighbours) on k-fold
+                    cross-validation, achieving up to 98% overall accuracy with 78% recall and 70% precision for
+                    detecting cross-border home-work movements at the individual movement level. Second, we apply
+                    zero-shot transfer learning by using Luxembourg-learned models to the two other regions and evaluate
+                    the results with official reports and population data. Our approach offers a scalable, replicable
+                    methodology for mapping cross-border labour mobility, providing valuable insights for infrastructure
+                    planning, social and economic equity, and climate adaptation policies at the urban and regional
+                    scale.</p>
 
                 <div class="row">
                     <div class="col-md-1"></div>
