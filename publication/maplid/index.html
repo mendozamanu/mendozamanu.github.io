@@ -103,12 +103,21 @@
 
             <div class="article-container">
                 <h3>Abstract</h3>
-                <p class="pub-abstract">This paper introduces MAPLID, a supervised multi-label approach for place
-                    identification using data supplied by mobile network operators. The framework evaluates several
-                    multi-label classifiers and validates results in different geographical settings, incorporating
-                    multimodal Point of Interest (POI) data to enhance robustness. MAPLID addresses the challenge of
-                    identifying land use types at a fine spatial granularity using mobile network data, demonstrating
-                    the advantages of a multi-label formulation over traditional single-label approaches.</p>
+                <p class="pub-abstract">Mobile phone data provide valuable insights into urban structure, yet
+                    traditional clustering methods assign a single label (e.g., home or work) per location,
+                    oversimplifying mixed-use areas. We present MAPLID, a supervised multi-label framework for place
+                    identification using Call Detail Records (CDRs) from Telecom Italia. The study area in Milan (23.5
+                    km<sup>2</sup>) was divided into 10,000 grid cells, with a 20 × 20 subgrid (4.7 km<sup>2</sup>) manually labelled
+                    for home, work, and high/medium/low density. Several multi-label classifiers (Label Powerset, Binary
+                    Relevance, Classifier Chain, and ML-kNN) were evaluated using 10-fold cross-validation and metrics
+                    such as accuracy, F1-score, and Hamming loss. The best performance, achieving 88.3% average
+                    precision and leading in four of nine metrics, was achieved with Label Powerset and Random Forest
+                    applied to outgoing call data. MAPLID was further validated in the province of Trento, confirming
+                    its robustness in more irregular and forested terrain. Incorporating multimodal Point of Interest
+                    (POI) features from OpenStreetMap improved accuracy in data-sparse regions like Trento. The results
+                    demonstrate MAPLID’s capability to capture multiple concurrent urban functions and to generalise
+                    across contrasting geographic contexts, offering a computationally efficient framework for dynamic
+                    land-use mapping, urban planning, and mobility analysis using large-scale telecom data.</p>
 
                 <div class="row">
                     <div class="col-md-1"></div>

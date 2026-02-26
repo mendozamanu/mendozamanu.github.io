@@ -103,15 +103,23 @@
 
             <div class="article-container">
                 <h3>Abstract</h3>
-                <p class="pub-abstract">This paper introduces SAMPLID (Supervised Approach for Meaningful Place
-                    Identification), a novel supervised method that addresses the challenge of identifying frequently
-                    visited and significant locations, such as home or work, using Call Detail Records (CDRs) from
-                    mobile phones. Unlike traditional unsupervised clustering techniques that group data based on
-                    inherent characteristics, SAMPLID employs a supervised learning framework. This approach utilizes a
-                    knowledge base specific to the problem, allowing for direct optimization towards specific place
-                    identification objectives. The study demonstrates SAMPLID's effectiveness using mobility data from
-                    Milan's mobile phone network, overcoming limitations of unsupervised clustering which may not always
-                    align with specific classification goals.</p>
+                <p class="pub-abstract">Data supplied by mobile phones have become the basis for identifying meaningful
+                    places frequently visited by individuals.
+                    In this study, we introduce SAMPLID, a new Supervised Approach for Meaningful Place Identification,
+                    based on providing a knowledge base focused on the specific problem we aim to solve (e.g., home/work
+                    identification).
+                    This approach allows to tackle place identification from a supervised perspective, offering an
+                    alternative to unsupervised clustering techniques. These clustering techniques rely on data
+                    characteristics that may not always be directly related to classification objectives.
+                    Our results, using mobility data provided by call detail records (CDRs) from Milan, demonstrate
+                    superior performance compared to applying clustering techniques. For all types of CDRs, the best
+                    results are obtained with the 20 × 20 subgrid, indicating that the model performs better when
+                    supplied with information from neighboring cells with a close spatial relationship, establishing
+                    neighborhood relationships that allow the model to clearly learn to identify transitions between
+                    cells of different types.
+                    Considering that it is common for a place or cell to be labeled in multiple categories at once, this
+                    supervised approach opens the door to addressing the identification of meaningful places from a
+                    multi-label perspective, which is difficult to achieve using classical unsupervised methods.</p>
 
                 <div class="row">
                     <div class="col-md-1"></div>

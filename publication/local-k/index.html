@@ -166,14 +166,26 @@
             <div class="article-container">
 
                 <h3>Abstract</h3>
-                <p class="pub-abstract">The multi-label k-nearest neighbors rule uses a single k value for all labels.
-                    However, since distributions of different labels can be very different, using a single k for all
-                    labels is suboptimal. In this work we propose a method in which a different k value is potentially
-                    used for each label. We formulate the problem of finding the adequate k value for each label as an
-                    optimization problem and propose three algorithms for this task. Our method has a fast training
-                    stage and its testing time complexity is similar to the standard ML-kNN. Experimental results on 40
-                    real-world multi-label datasets show that our local-based k value approach significantly improves
-                    the performance of two different implementations of ML-kNN.</p>
+                <p class="pub-abstract">Multi-label learning is a growing field in machine learning research. Many
+                    applications address instances that simultaneously belong to many categories, which cannot be
+                    disregarded if optimal results are desired. Among the many algorithms developed for multi-label
+                    learning, the multi-label 𝑘-nearest neighbor method is among the most successful. However, in a
+                    difficult classification task, such as multi-label learning, a challenge that arises in the
+                    𝑘-nearest neighbor approach is the assignment of the appropriate value of 𝑘. Although a suitable
+                    value might be obtained using cross-validation, it is unlikely that the same value will be optimal
+                    for the whole space spanned by the training set. It is evident that different regions of the feature
+                    space would have different distributions of instances and labels that would require different values
+                    of 𝑘. The very complex boundaries among the many present labels make the necessity of local 𝑘
+                    values even more important than in the case with a single-label 𝑘-nearest neighbor. We present a
+                    simple yet powerful approach for setting a local value of 𝑘. We associate a potentially different
+                    𝑘 with every prototype and obtain the best value of that 𝑘 by optimizing the criterion consisting
+                    of the local effect of the different 𝑘 values in the neighborhood of the prototype. The proposed
+                    method has a fast training stage, as it only uses the neighborhood of each training instance to set
+                    the local 𝑘 value. The complexity of the proposed method in terms of the testing time is similar to
+                    that of the standard multi-label 𝑘-nearest neighbor approach. Experiments performed on a set of 20
+                    problems show that not only does our proposed method significantly outperform the standard
+                    multi-label 𝑘-nearest neighbor rule but also the locally adaptive multi-label k-nearest neighbor
+                    method can benefit from a local 𝑘 value.</p>
 
                 <div class="row">
                     <div class="col-md-1"></div>
