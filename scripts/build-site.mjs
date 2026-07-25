@@ -131,7 +131,7 @@ const homeContent = `
     </div>
     <div class="hero-portrait">
       <div class="hero-photo-frame">
-        <img src="${escapeHtml(site.profileImage)}" alt="Portrait of ${escapeHtml(site.name)}" width="800" height="800" fetchpriority="high">
+        <img src="${escapeHtml(site.profileImage)}?v=${escapeHtml(site.assetVersion)}" alt="Portrait of ${escapeHtml(site.name)}" width="1368" height="1368" fetchpriority="high">
       </div>
     </div>
   </div>

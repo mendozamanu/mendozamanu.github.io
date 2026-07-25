@@ -47,7 +47,7 @@ def footer(canvas, doc):
     canvas.drawString(
         MARGIN_X,
         PAGE_H - 17 * mm,
-        "Profesor de Informática - Doctor en Computación Avanzada, Energía y Plasmas",
+        "Lecturer in Computer Science - PhD in Advanced Computing, Energy and Plasmas",
     )
     canvas.setFillColor(TEAL)
     canvas.rect(0, PAGE_H - 24.2 * mm, PAGE_W, 1.2 * mm, fill=1, stroke=0)
@@ -59,12 +59,12 @@ def footer(canvas, doc):
     canvas.drawString(
         MARGIN_X,
         7 * mm,
-        "CV académico público - Actualizado el 25 de julio de 2026",
+        "Public academic CV - Updated 25 July 2026",
     )
     canvas.drawRightString(
         PAGE_W - MARGIN_X,
         7 * mm,
-        f"Pagina {doc.page}",
+        f"Page {doc.page}",
     )
     canvas.restoreState()
 
@@ -78,9 +78,9 @@ class CVDocTemplate(BaseDocTemplate):
             rightMargin=MARGIN_X,
             topMargin=TOP,
             bottomMargin=BOTTOM,
-            title="Currículum vitae público - Manuel Mendoza Hurtado",
+            title="Public curriculum vitae - Manuel Mendoza Hurtado",
             author="Manuel Mendoza Hurtado",
-            subject="Currículum académico público en español",
+            subject="Public academic curriculum vitae in English",
         )
         frame = Frame(
             self.leftMargin,
@@ -237,7 +237,7 @@ def build_story():
         [
             [
                 p(
-                    "<b>Universidad de Jaén</b><br/>Departamento de Informática<br/>"
+                    "<b>University of Jaén</b><br/>Department of Computer Science<br/>"
                     "Escuela Politécnica Superior de Linares",
                     contact,
                 ),
@@ -251,7 +251,7 @@ def build_story():
                 p(
                     '<link href="https://orcid.org/0000-0003-1848-4595" color="#087F83">'
                     "ORCID 0000-0003-1848-4595</link><br/>"
-                    "Jaén, España",
+                    "Linares, Spain",
                     contact,
                 ),
             ]
@@ -272,85 +272,84 @@ def build_story():
     )
     story.extend([contact_table, Spacer(1, 7)])
 
-    story.append(section_title("01", "Perfil profesional"))
+    story.append(section_title("01", "Professional profile"))
     story.append(
         p(
-            "Profesor del Departamento de Informática de la Universidad de Jaén en la "
-            "Escuela Politécnica Superior de Linares y doctor por la Universidad de "
-            "Córdoba. Defendió el 4 de junio de 2026 la "
-            "tesis <i>Identification of population patterns using advanced machine "
-            "learning techniques applied to mobile phone and geolocation data</i>, "
-            "calificada con Sobresaliente cum laude y Mención Internacional. Su "
-            "investigación se centra en movilidad humana, aprendizaje automático "
-            "geoespacial, clasificación multi-etiqueta y datos de trazas digitales."
+            "Lecturer in the Department of Computer Science at the University of Jaén's "
+            "Escuela Politécnica Superior de Linares and PhD graduate of the University "
+            "of Córdoba. He defended his thesis, <i>Identification of population patterns "
+            "using advanced machine learning techniques applied to mobile phone and "
+            "geolocation data</i>, on 4 June 2026. The thesis was awarded "
+            "<i>Sobresaliente cum laude</i> with International Mention. His research "
+            "focuses on human mobility, geospatial machine learning, multi-label "
+            "classification and digital trace data."
         )
     )
 
-    story.append(section_title("02", "Experiencia profesional"))
+    story.append(section_title("02", "Professional experience"))
     story.extend(
         [
             experience(
-                "Septiembre de 2025 - actualidad",
-                "Profesor Sustituto",
-                "Universidad de Jaén",
-                "Docencia en programación, bases de datos, sistemas inteligentes, "
-                "sistemas móviles y distribuidos e informática general en titulaciones "
-                "de ingeniería de la Escuela Politécnica Superior de Linares.",
+                "September 2025 - present",
+                "Temporary Lecturer (Profesor Sustituto)",
+                "University of Jaén",
+                "Teaching programming, databases, intelligent systems, mobile and "
+                "distributed systems, and introductory computing across engineering "
+                "degrees at the Escuela Politécnica Superior de Linares.",
             ),
             experience(
                 "2025",
-                "Personal técnico de laboratorio",
-                "Universidad de Córdoba",
-                "Contrato técnico de tres meses vinculado al proyecto de aprendizaje "
-                "multi-etiqueta PID2022-141869NB-I00.",
+                "Laboratory Technical Staff",
+                "University of Córdoba",
+                "Three-month technical appointment supporting multi-label learning "
+                "project PID2022-141869NB-I00.",
             ),
             experience(
                 "2021 - 2025",
-                "Investigador predoctoral FPU-UCO-2020",
-                "Universidad de Córdoba",
-                "Investigación sobre identificación de patrones poblacionales mediante "
-                "datos de telefonía móvil, geolocalización y técnicas avanzadas de "
-                "aprendizaje automático.",
+                "Predoctoral Researcher - FPU-UCO-2020",
+                "University of Córdoba",
+                "Research on population-pattern identification using mobile phone and "
+                "geolocation data with advanced machine-learning methods.",
             ),
             experience(
-                "Marzo - agosto de 2020",
-                "Becario de desarrollo RCT",
+                "March - August 2020",
+                "RCT Development Intern",
                 "Keysight Technologies",
-                "Desarrollo y pruebas de software con C#, Visual Studio y tecnologías 5G.",
+                "Software development and testing with C#, Visual Studio and 5G technologies.",
             ),
             experience(
-                "Octubre de 2018 - junio de 2019",
-                "Beca de iniciación a la investigación",
-                "Universidad de Córdoba",
-                "Formación investigadora en Python, aprendizaje automático y clasificación.",
+                "October 2018 - June 2019",
+                "Undergraduate Research Fellow",
+                "University of Córdoba",
+                "Research training in Python, machine learning and classification.",
             ),
         ]
     )
 
-    story.append(section_title("03", "Formación académica"))
+    story.append(section_title("03", "Education"))
     story.extend(
         [
             education(
                 "2021 - 2026",
-                "Doctorado en Computación Avanzada, Energía y Plasmas",
-                "Universidad de Córdoba",
-                "Sobresaliente cum laude - Mención Internacional.",
+                "PhD in Advanced Computing, Energy and Plasmas",
+                "University of Córdoba",
+                "Sobresaliente cum laude - International Mention.",
             ),
             education(
                 "2020",
-                "Máster Universitario en Telemática y Redes de Telecomunicación",
-                "Universidad de Málaga",
+                "Master's Degree in Telematics and Telecommunication Networks",
+                "University of Málaga",
             ),
             education(
                 "2015 - 2019",
-                "Grado en Ingeniería Informática - Ingeniería del Software",
-                "Universidad de Córdoba",
+                "BSc in Computer Engineering - Software Engineering",
+                "University of Córdoba",
             ),
         ]
     )
 
     story.append(PageBreak())
-    story.append(section_title("04", "Publicaciones científicas"))
+    story.append(section_title("04", "Scientific publications"))
     story.extend(
         [
             publication_item(
@@ -406,43 +405,43 @@ def build_story():
         ]
     )
 
-    story.append(section_title("05", "Comunicaciones científicas"))
+    story.append(section_title("05", "Conference contributions"))
     story.extend(
         [
             p(
                 "<b>Dual-locality learning under neighbourhood coupling: interpretable "
                 "and transferable models for structured trace data.</b> Fourth General "
-                "Meeting, COSY COST Action CA21101, España, 2026.",
+                "Meeting, COSY COST Action CA21101, Spain, 2026.",
                 small,
             ),
             p(
                 "<b>Data acquisition of users' location with mobile devices.</b> "
-                "XI Congreso Científico de Personal Investigador en Formación, "
-                "Universidad de Córdoba, 2023.",
+                "11th Scientific Conference for Early-Career Researchers, "
+                "University of Córdoba, 2023.",
                 small,
             ),
         ]
     )
 
-    story.append(section_title("06", "Proyectos y colaboraciones"))
+    story.append(section_title("06", "Projects and collaborations"))
     project_table = Table(
         [
             [
                 p("2023 - 2026", entry_meta),
                 p(
-                    "<b>Una aproximación integral al aprendizaje semi-supervisado "
-                    "multi-etiqueta mediante computación evolutiva</b><br/>"
-                    "Proyecto PID2022-141869NB-I00 - Universidad de Córdoba<br/>"
-                    "Periodo: 01/09/2023 - 31/08/2026 - Financiación: 113.750 EUR",
+                    "<b>An integrated approach to semi-supervised multi-label learning "
+                    "through evolutionary computation</b><br/>"
+                    "Project PID2022-141869NB-I00 - University of Córdoba<br/>"
+                    "Period: 1 September 2023 - 31 August 2026 - Funding: EUR 113,750",
                     small,
                 ),
             ],
             [
-                p("Estancia internacional", entry_meta),
+                p("International research stay", entry_meta),
                 p(
                     "<b>Digital Geography Lab - University of Helsinki</b><br/>"
-                    "Investigación sobre movilidad laboral transfronteriza a partir de "
-                    "datos geolocalizados de redes sociales.",
+                    "Research on cross-border labour mobility using geolocated social "
+                    "media data.",
                     small,
                 ),
             ],
@@ -461,23 +460,23 @@ def build_story():
     )
     story.append(project_table)
 
-    story.append(section_title("07", "Lineas y competencias"))
+    story.append(section_title("07", "Research areas and skills"))
     skills = Table(
         [
             [
                 p(
-                    "<b>Investigación</b><br/>Movilidad humana y analítica urbana<br/>"
-                    "Aprendizaje automático geoespacial",
+                    "<b>Research</b><br/>Human mobility and urban analytics<br/>"
+                    "Geospatial machine learning",
                     small,
                 ),
                 p(
-                    "<b>Métodos</b><br/>Clasificación multi-etiqueta<br/>"
-                    "Validación espacial y k vecinos",
+                    "<b>Methods</b><br/>Multi-label classification<br/>"
+                    "Spatial validation and k-nearest neighbours",
                     small,
                 ),
                 p(
-                    "<b>Tecnología</b><br/>Python y ciencia de datos<br/>"
-                    "Desarrollo de software y bases de datos",
+                    "<b>Technology</b><br/>Python and data science<br/>"
+                    "Software development and databases",
                     small,
                 ),
             ]

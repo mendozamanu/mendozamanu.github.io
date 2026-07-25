@@ -170,7 +170,7 @@ export function page({
   <link rel="canonical" href="${canonical}">
   <link rel="icon" href="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_32x32_fill_lanczos_center_2.png">
   <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="stylesheet" href="/assets/site.css">
+  <link rel="stylesheet" href="/assets/site.css?v=${escapeHtml(site.assetVersion)}">
   <meta property="og:type" content="${escapeHtml(type)}">
   <meta property="og:site_name" content="${escapeHtml(site.name)}">
   <meta property="og:title" content="${escapeHtml(fullTitle)}">
@@ -194,7 +194,7 @@ export function page({
     ${content}
   </main>
   ${footer()}
-  <script src="/assets/site.js" defer></script>
+  <script src="/assets/site.js?v=${escapeHtml(site.assetVersion)}" defer></script>
 </body>
 </html>
 `.replace(/[ \t]+$/gm, "");

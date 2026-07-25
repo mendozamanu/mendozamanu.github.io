@@ -310,8 +310,8 @@ p {
 .hero-grid {
   align-items: center;
   display: grid;
-  gap: clamp(2.5rem, 7vw, 6.5rem);
-  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.65fr);
+  gap: clamp(2.5rem, 5vw, 4rem);
+  grid-template-columns: minmax(0, 1.25fr) minmax(380px, 0.9fr);
 }
 
 .hero h1 {
@@ -339,7 +339,7 @@ p {
 .hero-portrait {
   isolation: isolate;
   margin: 0 auto;
-  max-width: 280px;
+  max-width: 412px;
   padding: 0.75rem 0.75rem 0 0;
   position: relative;
   width: 100%;
@@ -717,7 +717,7 @@ p {
 }
 
 .thesis-callout {
-  background: var(--navy);
+  background: #10283f;
   border-radius: calc(var(--radius) * 1.25);
   color: #e8f1f4;
   overflow: hidden;
@@ -1133,7 +1133,7 @@ p {
   }
 
   .hero-portrait {
-    max-width: 260px;
+    max-width: 320px;
   }
 
   .section-header {
@@ -1177,8 +1177,8 @@ p {
   }
 
   .hero-portrait {
-    max-width: 250px;
-    width: min(70vw, 250px);
+    max-width: 280px;
+    width: min(78vw, 280px);
   }
 
   .education-grid,

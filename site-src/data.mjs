@@ -11,6 +11,7 @@ export const site = {
   description:
     "Manuel Mendoza Hurtado is a university lecturer and PhD-qualified researcher specialising in human mobility, geospatial machine learning and multi-label learning.",
   copyrightYear: 2026,
+  assetVersion: "20260725-profile-1368-a11y",
   profileImage: "/assets/profile.png",
   email: "mmhurtad@ujaen.es",
   affiliation: {
