@@ -1,3 +1,4 @@
 User-agent: *
+Allow: /
 
-Sitemap: sitemap.xml
+Sitemap: https://mendozamanu.github.io/sitemap.xml

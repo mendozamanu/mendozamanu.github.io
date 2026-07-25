@@ -1,179 +1,116 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
+<!doctype html>
+<html lang="en" data-theme="auto">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
-    <meta name="description"
-        content="This paper introduces SAMPLID (Supervised Approach for Meaningful Place Identification), a novel supervised method that addresses the challenge of identifying frequently visited and significant locations, such as home or work, using Call Detail Records from mobile phones. Unlike traditional unsupervised clustering techniques, SAMPLID employs a supervised learning framework that utilizes a knowledge base specific to the problem, allowing for direct optimization towards specific place identification objectives." />
-    <link rel="alternate" hreflang="en-us" href="/publication/samplid/" />
-    <meta name="theme-color" content="#1565c0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css"
-        integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg=="
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css"
-        crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css"
-        crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-    <link rel="stylesheet" href="/css/wowchemy.299c20016eab2ddaf829d17ab5a7213c.css" />
-    <link rel="manifest" href="/index.webmanifest" />
-    <link rel="icon" type="image/png"
-        href="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_32x32_fill_lanczos_center_2.png" />
-    <link rel="apple-touch-icon" type="image/png"
-        href="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_180x180_fill_lanczos_center_2.png" />
-    <link rel="canonical" href="/publication/samplid/" />
-    <meta property="twitter:card" content="summary" />
-    <meta property="og:site_name" content="Portfolio" />
-    <meta property="og:url" content="/publication/samplid/" />
-    <meta property="og:title"
-        content="SAMPLID: A new supervised approach for meaningful place identification using call detail records as an alternative to classical unsupervised clustering techniques | Portfolio" />
-    <meta property="og:description"
-        content="SAMPLID: A supervised approach for meaningful place identification using CDRs." />
-    <meta property="og:locale" content="en-us" />
-    <meta property="article:published_time" content="2024-01-01T00:00:00&#43;00:00" />
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "/publication/samplid/" },
-  "headline": "SAMPLID: A new supervised approach for meaningful place identification using call detail records as an alternative to classical unsupervised clustering techniques",
-  "datePublished": "2024-01-01T00:00:00Z",
-  "author": { "@type": "Person", "name": "Manuel Mendoza-Hurtado" },
-  "publisher": { "@type": "Organization", "name": "Portfolio", "logo": { "@type": "ImageObject", "url": "/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_192x192_fill_lanczos_center_2.png" } },
-  "description": "SAMPLID: A supervised approach for meaningful place identification using CDRs."
-}
-</script>
-
-    <title>SAMPLID: A new supervised approach for meaningful place identification using call detail records as an
-        alternative to classical unsupervised clustering techniques | Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAMPLID: A new supervised approach for meaningful place identification using call detail records as an alternative to classical unsupervised clustering techniques · Manuel Mendoza Hurtado</title>
+  <meta name="description" content="A supervised alternative to classical clustering for identifying meaningful places from call detail records.">
+  <meta name="author" content="Manuel Mendoza Hurtado">
+  <meta name="theme-color" content="#10283f">
+  <link rel="canonical" href="https://mendozamanu.github.io/publication/samplid/">
+  <link rel="icon" href="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_32x32_fill_lanczos_center_2.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/assets/site.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Manuel Mendoza Hurtado">
+  <meta property="og:title" content="SAMPLID: A new supervised approach for meaningful place identification using call detail records as an alternative to classical unsupervised clustering techniques · Manuel Mendoza Hurtado">
+  <meta property="og:description" content="A supervised alternative to classical clustering for identifying meaningful places from call detail records.">
+  <meta property="og:url" content="https://mendozamanu.github.io/publication/samplid/">
+  <meta property="og:image" content="https://mendozamanu.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Manuel Mendoza Hurtado — academic profile">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SAMPLID: A new supervised approach for meaningful place identification using call detail records as an alternative to classical unsupervised clustering techniques · Manuel Mendoza Hurtado">
+  <meta name="twitter:description" content="A supervised alternative to classical clustering for identifying meaningful places from call detail records.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"SAMPLID: A new supervised approach for meaningful place identification using call detail records as an alternative to classical unsupervised clustering techniques","name":"SAMPLID: A new supervised approach for meaningful place identification using call detail records as an alternative to classical unsupervised clustering techniques","url":"https://mendozamanu.github.io/publication/samplid/","datePublished":"2024-08-20","author":[{"@type":"Person","name":"Manuel Mendoza-Hurtado"},{"@type":"Person","name":"Juan A. Romero-del-Castillo"},{"@type":"Person","name":"Domingo Ortiz-Boyer"}],"about":["Mobility","Classification","Place Identification","Call detail records"],"abstract":"SAMPLID introduces a supervised approach for meaningful place identification based on a problem-specific knowledge base. Using call detail records from Milan, the method outperforms classical unsupervised clustering and performs best when spatially related neighbouring cells are represented in the training data. The approach provides a direct path from mobile-network activity to interpretable home and work classifications and establishes the basis for later multi-label extensions.","isPartOf":{"@type":"Periodical","name":"ISPRS International Journal of Geo-Information"},"sameAs":"https://doi.org/10.3390/ijgi13080289","identifier":{"@type":"PropertyValue","propertyID":"DOI","value":"10.3390/ijgi13080289"}}</script>
 </head>
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "
-    data-wc-page-id="samplid">
-    <script src="/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js"></script>
-
-    <div class="page-header">
-        <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-            <div class="container-xl">
-                <div class="d-none d-lg-inline-flex"><a class="navbar-brand" href="/">Portfolio</a></div>
-                <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none"><a class="navbar-brand"
-                        href="/">Portfolio</a></div>
-                <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-                    <li class="nav-item dropdown theme-dropdown">
-                        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true"
-                            aria-label="Display preferences"><i class="fas fa-moon" aria-hidden="true"></i></a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item js-set-theme-light"><span>Light</span></a>
-                            <a href="#" class="dropdown-item js-set-theme-dark"><span>Dark</span></a>
-                            <a href="#" class="dropdown-item js-set-theme-auto"><span>Automatic</span></a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<body class="">
+  <header class="site-header">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="shell header-inner">
+      <a class="wordmark" href="/" aria-label="Manuel Mendoza Hurtado, home">
+        <span class="wordmark__monogram" aria-hidden="true">MM</span>
+        <span class="wordmark__name">Manuel Mendoza</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle__bars" aria-hidden="true"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="/#about">About</a>
+<a href="/#experience">Experience</a>
+<a href="/publication/" aria-current="page">Publications</a>
+<a href="/project/thesis/">Thesis</a>
+<a href="/#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Use dark colour scheme" title="Toggle colour scheme">
+        <span class="theme-toggle__light" aria-hidden="true">☼</span>
+        <span class="theme-toggle__dark" aria-hidden="true">◐</span>
+      </button>
     </div>
+  </header>
+  <main id="main">
 
-    <div class="page-body">
-        <div class="pub">
-            <div class="article-container pt-3">
-                <h1>SAMPLID: A new supervised approach for meaningful place identification using call detail records as
-                    an alternative to classical unsupervised clustering techniques</h1>
-
-                <div class="article-metadata">
-                    <div>
-                        <span><strong>Manuel Mendoza-Hurtado</strong></span>, <span>Juan A. Romero-del-Castillo</span>,
-                        <span>Domingo Ortiz-Boyer</span>
-                    </div>
-                    <span class="article-date">2024</span>
-                </div>
-
-                <div class="btn-links mb-3">
-                    <a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.3390/ijgi13080289"
-                        target="_blank" rel="noopener">
-                        DOI
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="article-container">
-                <h3>Abstract</h3>
-                <p class="pub-abstract">Data supplied by mobile phones have become the basis for identifying meaningful
-                    places frequently visited by individuals.
-                    In this study, we introduce SAMPLID, a new Supervised Approach for Meaningful Place Identification,
-                    based on providing a knowledge base focused on the specific problem we aim to solve (e.g., home/work
-                    identification).
-                    This approach allows to tackle place identification from a supervised perspective, offering an
-                    alternative to unsupervised clustering techniques. These clustering techniques rely on data
-                    characteristics that may not always be directly related to classification objectives.
-                    Our results, using mobility data provided by call detail records (CDRs) from Milan, demonstrate
-                    superior performance compared to applying clustering techniques. For all types of CDRs, the best
-                    results are obtained with the 20 × 20 subgrid, indicating that the model performs better when
-                    supplied with information from neighboring cells with a close spatial relationship, establishing
-                    neighborhood relationships that allow the model to clearly learn to identify transitions between
-                    cells of different types.
-                    Considering that it is common for a place or cell to be labeled in multiple categories at once, this
-                    supervised approach opens the door to addressing the identification of meaningful places from a
-                    multi-label perspective, which is difficult to achieve using classical unsupervised methods.</p>
-
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-12 col-md-3 pub-row-heading">Type</div>
-                            <div class="col-12 col-md-9"><a href="/publication/#2">Journal article</a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-                <div class="d-md-none space-below"></div>
-
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-                            <div class="col-12 col-md-9"><em>ISPRS International Journal of Geo-Information</em>, 13(8),
-                                289</div>
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-                <div class="d-md-none space-below"></div>
-
-                <div class="space-below"></div>
-                <div class="article-style"></div>
-
-                <div class="article-tags">
-                    <a class="badge badge-light" href="/tag/mobility/">mobility</a>
-                    <a class="badge badge-light" href="/tag/classification/">classification</a>
-                    <a class="badge badge-light" href="/tag/cdr/">CDR</a>
-                    <a class="badge badge-light" href="/tag/place-identification/">place identification</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
+  <section class="page-hero">
+    <div class="shell">
+      <p class="eyebrow">ISPRS International Journal of Geo-Information · 2024</p>
+      <div class="badges" aria-label="Publication status">
+    <span class="badge badge--published">Published</span>
+    <span class="badge badge--type">Journal Article</span>
+    <span class="badge badge--open">Open access</span>
+  </div>
+      <h1>SAMPLID: A new supervised approach for meaningful place identification using call detail records as an alternative to classical unsupervised clustering techniques</h1>
+      <p class="page-hero__lead"><strong>Manuel Mendoza-Hurtado</strong>, Juan A. Romero-del-Castillo, Domingo Ortiz-Boyer</p>
 
     </div>
-
-    <div class="page-footer">
-        <div class="container">
-            <footer class="site-footer">
-                <p class="powered-by">&copy; Manuel Mendoza-Hurtado</p>
-            </footer>
-        </div>
+  </section>
+  <section class="publication-detail">
+    <div class="shell publication-detail__grid">
+      <article class="publication-detail__main">
+        <h2>Abstract</h2>
+        <p class="abstract">SAMPLID introduces a supervised approach for meaningful place identification based on a problem-specific knowledge base. Using call detail records from Milan, the method outperforms classical unsupervised clustering and performs best when spatially related neighbouring cells are represented in the training data. The approach provides a direct path from mobile-network activity to interpretable home and work classifications and establishes the basis for later multi-label extensions.</p>
+        <h2>Citation</h2>
+        <p class="citation">Mendoza-Hurtado, M., Romero-del-Castillo, J. A., &amp; Ortiz-Boyer, D. (2024). SAMPLID: A new supervised approach for meaningful place identification using call detail records as an alternative to classical unsupervised clustering techniques. ISPRS International Journal of Geo-Information, 13(8), Article 289. https://doi.org/10.3390/ijgi13080289</p>
+        <div class="tag-list" aria-label="Topics">
+    <a class="tag" href="/tag/mobility/">Mobility</a>
+<a class="tag" href="/tag/classification/">Classification</a>
+<a class="tag" href="/tag/place-identification/">Place Identification</a>
+<a class="tag" href="/tag/cdr/">Call detail records</a>
+  </div>
+      </article>
+      <aside class="publication-side aside-card" aria-label="Publication information">
+        <h3>Publication details</h3>
+        <dl class="metadata-list">
+          <div><dt>Published</dt><dd>20 August 2024</dd></div>
+          <div><dt>Venue</dt><dd>ISPRS International Journal of Geo-Information</dd></div>
+          <div><dt>Reference</dt><dd>13(8), Article 289</dd></div>
+          <div><dt>DOI</dt><dd><a href="https://doi.org/10.3390/ijgi13080289">10.3390/ijgi13080289</a></dd></div>
+        </dl>
+        <div class="button-row ">
+    <a class="button button--small" href="https://www.mdpi.com/2220-9964/13/8/289" target="_blank" rel="noopener noreferrer">Article<span aria-hidden="true"> ↗</span></a>
+<a class="button button--small" href="https://www.mdpi.com/2220-9964/13/8/289/pdf" target="_blank" rel="noopener noreferrer">PDF<span aria-hidden="true"> ↗</span></a>
+<a class="button button--small" href="https://doi.org/10.3390/ijgi13080289" target="_blank" rel="noopener noreferrer">DOI<span aria-hidden="true"> ↗</span></a>
+  </div>
+        <div class="button-row" style="margin-top: .7rem"><a class="button button--small" href="/publication/samplid/cite.bib" download>Download BibTeX</a></div>
+      </aside>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
-    <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <p class="footer-name">Manuel Mendoza Hurtado</p>
+        <p>Lecturer in Computer Science at the <a href="https://www.ujaen.es/">University of Jaén</a>.</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:mmhurtad@ujaen.es">mmhurtad@ujaen.es</a>
+        <a href="/files/manuel-mendoza-hurtado-cv.pdf">Public CV (PDF)</a>
+        <a href="/publication/">Publications</a>
+      </div>
+      <p class="footer-meta">© 2026 Manuel Mendoza Hurtado<br>Built as a small, accessible static site.</p>
+    </div>
+  </footer>
+  <script src="/assets/site.js" defer></script>
 </body>
-
 </html>

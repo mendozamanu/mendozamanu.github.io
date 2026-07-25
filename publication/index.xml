@@ -1,19 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
   <channel>
-    <title>Publications | Portfolio</title>
-    <link>/publication/</link>
-      <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
-    <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_512x512_fill_lanczos_center_2.png</url>
-      <title>Publications</title>
-      <link>/publication/</link>
-    </image>
-    
-    
-
-    
+    <title>Manuel Mendoza Hurtado — Publications</title>
+    <link>https://mendozamanu.github.io/publication/</link>
+    <description>Manuel Mendoza Hurtado is a university lecturer and PhD-qualified researcher specialising in human mobility, geospatial machine learning and multi-label learning.</description>
+    <language>en</language>
+    <item>
+      <title>MAPLID: a new multi-label approach for place identification using data supplied by mobile network operators</title>
+      <link>https://mendozamanu.github.io/publication/maplid/</link>
+      <guid isPermaLink="true">https://mendozamanu.github.io/publication/maplid/</guid>
+      <pubDate>Thu, 29 Jan 2026 12:00:00 GMT</pubDate>
+      <description>A supervised multi-label framework that identifies concurrent urban functions from mobile-network activity and generalises across Milan and Trento.</description>
+    </item>
+    <item>
+      <title>Sensing labour mobility flows of cross-border urban regions using machine learning and geolocated social network data</title>
+      <link>https://mendozamanu.github.io/publication/cross-border/</link>
+      <guid isPermaLink="true">https://mendozamanu.github.io/publication/cross-border/</guid>
+      <pubDate>Wed, 13 May 2026 12:00:00 GMT</pubDate>
+      <description>A transferable machine-learning framework for detecting cross-border commuting from geolocated social-media traces across three European regions.</description>
+    </item>
+    <item>
+      <title>False flag: An evolutionary false labeling approach for multilabel classification</title>
+      <link>https://mendozamanu.github.io/publication/false-flag/</link>
+      <guid isPermaLink="true">https://mendozamanu.github.io/publication/false-flag/</guid>
+      <pubDate>Fri, 27 Feb 2026 12:00:00 GMT</pubDate>
+      <description>An evolutionary approach that deliberately modifies training labels to improve multi-label classification across diverse datasets and models.</description>
+    </item>
+    <item>
+      <title>A supervised approach for land use identification in Trento using mobile phone data as an alternative to unsupervised clustering techniques</title>
+      <link>https://mendozamanu.github.io/publication/trento/</link>
+      <guid isPermaLink="true">https://mendozamanu.github.io/publication/trento/</guid>
+      <pubDate>Sun, 09 Feb 2025 12:00:00 GMT</pubDate>
+      <description>Supervised land-use classification from call detail records in an alpine setting, testing generalisation beyond dense metropolitan areas.</description>
+    </item>
+    <item>
+      <title>SAMPLID: A new supervised approach for meaningful place identification using call detail records as an alternative to classical unsupervised clustering techniques</title>
+      <link>https://mendozamanu.github.io/publication/samplid/</link>
+      <guid isPermaLink="true">https://mendozamanu.github.io/publication/samplid/</guid>
+      <pubDate>Tue, 20 Aug 2024 12:00:00 GMT</pubDate>
+      <description>A supervised alternative to classical clustering for identifying meaningful places from call detail records.</description>
+    </item>
+    <item>
+      <title>Local-based k values for multi-label k-nearest neighbors rule</title>
+      <link>https://mendozamanu.github.io/publication/local-k/</link>
+      <guid isPermaLink="true">https://mendozamanu.github.io/publication/local-k/</guid>
+      <pubDate>Tue, 01 Nov 2022 12:00:00 GMT</pubDate>
+      <description>A locally adaptive method that selects a different neighbourhood size for each prototype in multi-label k-nearest-neighbour learning.</description>
+    </item>
+    <item>
+      <title>A new local proximity-based k-nearest neighbours method for multi-label population patterns identification using mobile phone data</title>
+      <link>https://mendozamanu.github.io/publication/ml-proxknn/</link>
+      <guid isPermaLink="true">https://mendozamanu.github.io/publication/ml-proxknn/</guid>
+      <pubDate>Thu, 01 Jan 2026 12:00:00 GMT</pubDate>
+      <description>A spatially aware multi-label k-nearest-neighbour method that combines feature-space locality with grid adjacency.</description>
+    </item>
   </channel>
 </rss>

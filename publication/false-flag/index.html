@@ -1,175 +1,115 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
+<!doctype html>
+<html lang="en" data-theme="auto">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="generator" content="Wowchemy 5.2.0 for Hugo" />
-    <meta name="description"
-        content="This paper presents False Flag, an evolutionary false labeling approach for multi-label classification. The method addresses challenges in multi-label learning through an innovative evolutionary strategy for handling label noise." />
-    <link rel="alternate" hreflang="en-us" href="/publication/false-flag/" />
-    <meta name="theme-color" content="#1565c0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css"
-        integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg=="
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css"
-        crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css"
-        crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-    <link rel="stylesheet" href="/css/wowchemy.299c20016eab2ddaf829d17ab5a7213c.css" />
-    <link rel="manifest" href="/index.webmanifest" />
-    <link rel="icon" type="image/png"
-        href="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_32x32_fill_lanczos_center_2.png" />
-    <link rel="apple-touch-icon" type="image/png"
-        href="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_180x180_fill_lanczos_center_2.png" />
-    <link rel="canonical" href="/publication/false-flag/" />
-    <meta property="twitter:card" content="summary" />
-    <meta property="og:site_name" content="Portfolio" />
-    <meta property="og:url" content="/publication/false-flag/" />
-    <meta property="og:title"
-        content="False flag: An evolutionary false labeling approach for multi-label classification | Portfolio" />
-    <meta property="og:description" content="An evolutionary false labeling approach for multi-label classification." />
-    <meta property="og:locale" content="en-us" />
-    <meta property="article:published_time" content="2026-03-01T00:00:00&#43;00:00" />
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "/publication/false-flag/" },
-  "headline": "False flag: An evolutionary false labeling approach for multi-label classification",
-  "datePublished": "2026-03-01T00:00:00Z",
-  "author": { "@type": "Person", "name": "Nicolás E. García-Pedrajas" },
-  "publisher": { "@type": "Organization", "name": "Portfolio", "logo": { "@type": "ImageObject", "url": "/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_192x192_fill_lanczos_center_2.png" } },
-  "description": "An evolutionary false labeling approach for multi-label classification."
-}
-</script>
-
-    <title>False flag: An evolutionary false labeling approach for multi-label classification | Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>False flag: An evolutionary false labeling approach for multilabel classification · Manuel Mendoza Hurtado</title>
+  <meta name="description" content="An evolutionary approach that deliberately modifies training labels to improve multi-label classification across diverse datasets and models.">
+  <meta name="author" content="Manuel Mendoza Hurtado">
+  <meta name="theme-color" content="#10283f">
+  <link rel="canonical" href="https://mendozamanu.github.io/publication/false-flag/">
+  <link rel="icon" href="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_32x32_fill_lanczos_center_2.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/assets/site.css">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Manuel Mendoza Hurtado">
+  <meta property="og:title" content="False flag: An evolutionary false labeling approach for multilabel classification · Manuel Mendoza Hurtado">
+  <meta property="og:description" content="An evolutionary approach that deliberately modifies training labels to improve multi-label classification across diverse datasets and models.">
+  <meta property="og:url" content="https://mendozamanu.github.io/publication/false-flag/">
+  <meta property="og:image" content="https://mendozamanu.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Manuel Mendoza Hurtado — academic profile">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="False flag: An evolutionary false labeling approach for multilabel classification · Manuel Mendoza Hurtado">
+  <meta name="twitter:description" content="An evolutionary approach that deliberately modifies training labels to improve multi-label classification across diverse datasets and models.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"False flag: An evolutionary false labeling approach for multilabel classification","name":"False flag: An evolutionary false labeling approach for multilabel classification","url":"https://mendozamanu.github.io/publication/false-flag/","datePublished":"2026-02-27","author":[{"@type":"Person","name":"Nicolás E. García-Pedrajas"},{"@type":"Person","name":"José Manuel Cuevas-Muñoz"},{"@type":"Person","name":"Manuel Mendoza-Hurtado"},{"@type":"Person","name":"Javier Pérez-Rodríguez"},{"@type":"Person","name":"Aída de Haro-García"}],"about":["Multi Label","Classification","Evolutionary","AI"],"abstract":"Multi-label classification becomes especially difficult for sparse, noisy labels and complex relationships among them. False flag labeling modifies the labels of training instances to construct a new training set that can improve model performance. An evolutionary algorithm treats this relabeling as an optimisation problem without assuming that added or removed labels correct annotation errors. Experiments across 50 datasets and seven classification models demonstrate the approach’s effectiveness.","isPartOf":{"@type":"Periodical","name":"Applied Soft Computing"},"sameAs":"https://doi.org/10.1016/j.asoc.2026.114912","identifier":{"@type":"PropertyValue","propertyID":"DOI","value":"10.1016/j.asoc.2026.114912"}}</script>
 </head>
-
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "
-    data-wc-page-id="false-flag">
-    <script src="/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js"></script>
-
-    <div class="page-header">
-        <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-            <div class="container-xl">
-                <div class="d-none d-lg-inline-flex"><a class="navbar-brand" href="/">Portfolio</a></div>
-                <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none"><a class="navbar-brand"
-                        href="/">Portfolio</a></div>
-                <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-                    <li class="nav-item dropdown theme-dropdown">
-                        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true"
-                            aria-label="Display preferences"><i class="fas fa-moon" aria-hidden="true"></i></a>
-                        <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item js-set-theme-light"><span>Light</span></a>
-                            <a href="#" class="dropdown-item js-set-theme-dark"><span>Dark</span></a>
-                            <a href="#" class="dropdown-item js-set-theme-auto"><span>Automatic</span></a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<body class="">
+  <header class="site-header">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="shell header-inner">
+      <a class="wordmark" href="/" aria-label="Manuel Mendoza Hurtado, home">
+        <span class="wordmark__monogram" aria-hidden="true">MM</span>
+        <span class="wordmark__name">Manuel Mendoza</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-toggle__bars" aria-hidden="true"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="/#about">About</a>
+<a href="/#experience">Experience</a>
+<a href="/publication/" aria-current="page">Publications</a>
+<a href="/project/thesis/">Thesis</a>
+<a href="/#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Use dark colour scheme" title="Toggle colour scheme">
+        <span class="theme-toggle__light" aria-hidden="true">☼</span>
+        <span class="theme-toggle__dark" aria-hidden="true">◐</span>
+      </button>
     </div>
+  </header>
+  <main id="main">
 
-    <div class="page-body">
-        <div class="pub">
-            <div class="article-container pt-3">
-                <h1>False flag: An evolutionary false labeling approach for multi-label classification</h1>
-
-                <div class="article-metadata">
-                    <div>
-                        <span>Nicolás E. García-Pedrajas</span>, <span>J. Manuel Cuevas-Muñoz</span>,
-                        <span><strong>Manuel Mendoza-Hurtado</strong></span>, <span>Juan Pérez-Rodríguez</span>,
-                        <span>Aída de Haro-García</span>
-                    </div>
-                    <span class="article-date">2026</span>
-                    <span class="middot-divider"></span>
-                    <span class="pub-publication"><em>Applied Soft Computing</em></span>
-                </div>
-
-                <div class="btn-links mb-3">
-                    <a class="btn btn-outline-primary btn-page-header btn-sm"
-                        href="https://doi.org/10.1016/j.asoc.2026.114912" target="_blank" rel="noopener">
-                        DOI
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="article-container">
-                <h3>Abstract</h3>
-                <p class="pub-abstract">Multi-label classification is a paradigm of supervised learning that has gained
-                    increased attention in recent years. Multi-label classification deals with problems where each
-                    sample can simultaneously belong to multiple binary classes, termed labels within this paradigm.
-                    The problem is more difficult than single-label classification. Low-density label datasets, noisy
-                    labels, and the complex relationships among the labels make the problem even harder. In this paper,
-                    we present a new approach, false flag labeling, based on modifying the labels of the instances of
-                    the training set to get a new training set able to improve the performance of the classification
-                    model. We assume that adding new relevant labels to the training set or removing relevant labels
-                    from it may improve the results of the learning algorithm, making the search for separation surfaces
-                    easier. We neither assume that the added labels correspond to the actual labels of the instances
-                    missed in the labeling process of the datasets, nor that the removed labels correspond to instances
-                    erroneously labeled. We use an evolutionary algorithm to approach the false labeling process as an
-                    optimization process. An extensive comparison using 50 datasets and seven different classification
-                    models demonstrates the advantageous performance of our approach.
-                </p>
-
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-12 col-md-3 pub-row-heading">Type</div>
-                            <div class="col-12 col-md-9"><a href="/publication/#2">Journal article</a></div>
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-                <div class="d-md-none space-below"></div>
-
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-                            <div class="col-12 col-md-9"><em>Applied Soft Computing</em></div>
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-                <div class="d-md-none space-below"></div>
-
-                <div class="space-below"></div>
-                <div class="article-style"></div>
-
-                <div class="article-tags">
-                    <a class="badge badge-light" href="/tag/multi-label/">multi-label</a>
-                    <a class="badge badge-light" href="/tag/classification/">classification</a>
-                    <a class="badge badge-light" href="/tag/evolutionary/">evolutionary</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
+  <section class="page-hero">
+    <div class="shell">
+      <p class="eyebrow">Applied Soft Computing · 2026</p>
+      <div class="badges" aria-label="Publication status">
+    <span class="badge badge--published">Published</span>
+    <span class="badge badge--type">Journal Article</span>
+    <span class="badge badge--open">Open access</span>
+  </div>
+      <h1>False flag: An evolutionary false labeling approach for multilabel classification</h1>
+      <p class="page-hero__lead">Nicolás E. García-Pedrajas, José Manuel Cuevas-Muñoz, <strong>Manuel Mendoza-Hurtado</strong>, Javier Pérez-Rodríguez, Aída de Haro-García</p>
 
     </div>
-
-    <div class="page-footer">
-        <div class="container">
-            <footer class="site-footer">
-                <p class="powered-by">&copy; Manuel Mendoza-Hurtado</p>
-            </footer>
-        </div>
+  </section>
+  <section class="publication-detail">
+    <div class="shell publication-detail__grid">
+      <article class="publication-detail__main">
+        <h2>Abstract</h2>
+        <p class="abstract">Multi-label classification becomes especially difficult for sparse, noisy labels and complex relationships among them. False flag labeling modifies the labels of training instances to construct a new training set that can improve model performance. An evolutionary algorithm treats this relabeling as an optimisation problem without assuming that added or removed labels correct annotation errors. Experiments across 50 datasets and seven classification models demonstrate the approach’s effectiveness.</p>
+        <h2>Citation</h2>
+        <p class="citation">García-Pedrajas, N. E., Cuevas-Muñoz, J. M., Mendoza-Hurtado, M., Pérez-Rodríguez, J., &amp; de Haro-García, A. (2026). False flag: An evolutionary false labeling approach for multilabel classification. Applied Soft Computing, 194, Article 114912. https://doi.org/10.1016/j.asoc.2026.114912</p>
+        <div class="tag-list" aria-label="Topics">
+    <a class="tag" href="/tag/multi-label/">Multi Label</a>
+<a class="tag" href="/tag/classification/">Classification</a>
+<a class="tag" href="/tag/evolutionary/">Evolutionary</a>
+<a class="tag" href="/tag/ai/">AI</a>
+  </div>
+      </article>
+      <aside class="publication-side aside-card" aria-label="Publication information">
+        <h3>Publication details</h3>
+        <dl class="metadata-list">
+          <div><dt>Published</dt><dd>27 February 2026</dd></div>
+          <div><dt>Venue</dt><dd>Applied Soft Computing</dd></div>
+          <div><dt>Reference</dt><dd>Volume 194, Article 114912</dd></div>
+          <div><dt>DOI</dt><dd><a href="https://doi.org/10.1016/j.asoc.2026.114912">10.1016/j.asoc.2026.114912</a></dd></div>
+        </dl>
+        <div class="button-row ">
+    <a class="button button--small" href="https://www.sciencedirect.com/science/article/pii/S1568494626003601" target="_blank" rel="noopener noreferrer">Article<span aria-hidden="true"> ↗</span></a>
+<a class="button button--small" href="https://doi.org/10.1016/j.asoc.2026.114912" target="_blank" rel="noopener noreferrer">DOI<span aria-hidden="true"> ↗</span></a>
+  </div>
+        <div class="button-row" style="margin-top: .7rem"><a class="button button--small" href="/publication/false-flag/cite.bib" download>Download BibTeX</a></div>
+      </aside>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
-    <script src="/en/js/wowchemy.min.4bba0826db6409c865d2e7b99039d6d0.js"></script>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <p class="footer-name">Manuel Mendoza Hurtado</p>
+        <p>Lecturer in Computer Science at the <a href="https://www.ujaen.es/">University of Jaén</a>.</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:mmhurtad@ujaen.es">mmhurtad@ujaen.es</a>
+        <a href="/files/manuel-mendoza-hurtado-cv.pdf">Public CV (PDF)</a>
+        <a href="/publication/">Publications</a>
+      </div>
+      <p class="footer-meta">© 2026 Manuel Mendoza Hurtado<br>Built as a small, accessible static site.</p>
+    </div>
+  </footer>
+  <script src="/assets/site.js" defer></script>
 </body>
-
 </html>
