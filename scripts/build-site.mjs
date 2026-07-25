@@ -78,6 +78,7 @@ function copy(source, destination) {
 
 copy("site-src/styles.css", "assets/site.css");
 copy("site-src/site.js", "assets/site.js");
+copy("site-src/profile.png", "assets/profile.png");
 if (existsSync(join(root, "site-src", "og.png"))) {
   copy("site-src/og.png", "assets/og.png");
 }
@@ -89,7 +90,7 @@ const personSchema = {
   "@id": `${site.baseUrl}/#person`,
   name: site.name,
   url: site.baseUrl,
-  image: absoluteUrl(site.avatar),
+  image: absoluteUrl(site.profileImage),
   email: `mailto:${site.email}`,
   jobTitle: site.role,
   description: site.description,
@@ -128,9 +129,11 @@ const homeContent = `
         <a class="button button--secondary" href="mailto:${escapeHtml(site.email)}">Email me</a>
       </div>
     </div>
-    <figure class="hero-portrait">
-      <img src="${escapeHtml(site.avatar)}" alt="Portrait of ${escapeHtml(site.name)}" width="500" height="625" fetchpriority="high">
-    </figure>
+    <div class="hero-portrait">
+      <div class="hero-photo-frame">
+        <img src="${escapeHtml(site.profileImage)}" alt="Portrait of ${escapeHtml(site.name)}" width="800" height="800" fetchpriority="high">
+      </div>
+    </div>
   </div>
 </section>
 
