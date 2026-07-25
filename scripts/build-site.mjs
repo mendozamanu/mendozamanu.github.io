@@ -194,7 +194,7 @@ const homeContent = `
     <div class="section-header">
       <div>
         <p class="eyebrow">Education</p>
-        <h2 id="education-title">Academic formation.</h2>
+        <h2 id="education-title">Academic background.</h2>
       </div>
       <p>A computing background developed through software engineering, telematics and advanced doctoral research.</p>
     </div>
@@ -390,7 +390,7 @@ for (const publication of publications) {
       : {}),
   };
   const detail = `
-  <section class="page-hero">
+  <section class="page-hero page-hero--detail">
     <div class="shell">
       <p class="eyebrow">${escapeHtml(publication.venue)} · ${escapeHtml(String(publication.year))}</p>
       ${statusBadges(publication)}
@@ -462,7 +462,7 @@ const thesisSchema = {
 };
 
 const thesisContent = `
-<section class="page-hero">
+<section class="page-hero page-hero--detail">
   <div class="shell">
     <p class="eyebrow">Completed PhD thesis · ${escapeHtml(thesis.institution)}</p>
     <h1>${escapeHtml(thesis.title)}</h1>

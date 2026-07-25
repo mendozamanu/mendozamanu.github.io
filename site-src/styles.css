@@ -4,7 +4,7 @@
   --ink-soft: #52616b;
   --navy: #10283f;
   --navy-light: #244a67;
-  --teal: #087f83;
+  --teal: #07797d;
   --teal-bright: #0ea5a8;
   --paper: #f7f3ec;
   --surface: #fffdf9;
@@ -101,7 +101,7 @@ a {
 }
 
 :focus-visible {
-  outline: 3px solid var(--gold);
+  outline: 3px solid var(--teal);
   outline-offset: 4px;
 }
 
@@ -824,6 +824,11 @@ p {
 .page-hero h1 {
   font-size: clamp(2.5rem, 6vw, 5rem);
   max-width: 18ch;
+}
+
+.page-hero--detail h1 {
+  font-size: clamp(2.35rem, 4.8vw, 4.25rem);
+  max-width: 24ch;
 }
 
 .page-hero__lead {
