@@ -10,9 +10,15 @@ export const site = {
     "Human Mobility · Geospatial Machine Learning · Multi-label Learning",
   description:
     "Manuel Mendoza Hurtado is a university lecturer and PhD-qualified researcher specialising in human mobility, geospatial machine learning and multi-label learning.",
+  searchConsoleVerification: "4GIsBlSV0D_iuNhKqkfmgiy9jSp_yG9Yu9_gJnMTjuM",
   copyrightYear: 2026,
   assetVersion: "20260725-final-a11y",
   profileImage: "/assets/profile.png",
+  analytics: {
+    provider: "GoatCounter",
+    scriptUrl: "https://gc.zgo.at/count.js",
+    endpoint: "https://mendozamanu.goatcounter.com/count",
+  },
   email: "mmhurtad@ujaen.es",
   affiliation: {
     name: "University of Jaén",

@@ -38,6 +38,19 @@ for (const route of requiredRoutes) {
     html.includes('type="application/ld+json"'),
     `${route} is missing JSON-LD`,
   );
+  if (site.analytics) {
+    assert(
+      html.includes(site.analytics.endpoint) &&
+        html.includes(site.analytics.scriptUrl),
+      `${route} is missing the configured analytics tracker`,
+    );
+    assert(
+      html.includes(
+        `location.hostname === ${JSON.stringify(new URL(site.baseUrl).hostname)}`,
+      ),
+      `${route} does not restrict analytics to the production host`,
+    );
+  }
 }
 
 const publicationArchive = readFileSync(
@@ -131,6 +144,12 @@ for (const route of requiredRoutes) {
 }
 
 const home = readFileSync(join(root, "index.html"), "utf8");
+assert(
+  home.includes(
+    `<meta name="google-site-verification" content="${site.searchConsoleVerification}">`,
+  ),
+  "Homepage is missing the Google Search Console verification tag",
+);
 assert(home.includes(`mailto:${site.email}`), "Homepage is missing direct email");
 assert(
   home.includes("Sobresaliente cum laude") &&

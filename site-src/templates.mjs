@@ -158,6 +158,17 @@ export function page({
   const fullTitle = title === site.name ? title : `${title} · ${site.name}`;
   const schemas = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
   const socialImage = `${site.baseUrl}/assets/og.png`;
+  const analyticsSnippet = site.analytics
+    ? `<script>
+    if (location.hostname === ${JSON.stringify(new URL(site.baseUrl).hostname)}) {
+      const tracker = document.createElement("script");
+      tracker.defer = true;
+      tracker.src = ${JSON.stringify(site.analytics.scriptUrl)};
+      tracker.dataset.goatcounter = ${JSON.stringify(site.analytics.endpoint)};
+      document.head.appendChild(tracker);
+    }
+  </script>`
+    : "";
   return `<!doctype html>
 <html lang="en" data-theme="auto">
 <head>
@@ -166,6 +177,7 @@ export function page({
   <title>${escapeHtml(fullTitle)}</title>
   <meta name="description" content="${escapeHtml(description)}">
   <meta name="author" content="${escapeHtml(site.name)}">
+  ${site.searchConsoleVerification ? `<meta name="google-site-verification" content="${escapeHtml(site.searchConsoleVerification)}">` : ""}
   <meta name="theme-color" content="#10283f">
   <link rel="canonical" href="${canonical}">
   <link rel="icon" href="/media/icon_hu3518839863cab9d8db50f172980c2d5d_1651_32x32_fill_lanczos_center_2.png">
@@ -187,6 +199,7 @@ export function page({
         `<script type="application/ld+json">${JSON.stringify(schema).replaceAll("<", "\\u003c")}</script>`,
     )
     .join("\n  ")}
+  ${analyticsSnippet}
 </head>
 <body class="${escapeHtml(pageClass)}">
   ${header(path)}
