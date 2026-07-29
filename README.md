@@ -23,7 +23,7 @@ affected by publisher rate limits.
 
 ## Public CV
 
-The Spanish public CV is generated with ReportLab:
+The English public CV is generated with ReportLab:
 
 ```powershell
 python scripts/build-public-cv.py

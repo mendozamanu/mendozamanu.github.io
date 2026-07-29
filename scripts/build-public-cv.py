@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "files" / "manuel-mendoza-hurtado-cv.pdf"
 
 NAVY = colors.HexColor("#10283F")
-TEAL = colors.HexColor("#087F83")
+TEAL = colors.HexColor("#07797D")
 GOLD = colors.HexColor("#C68B18")
 INK = colors.HexColor("#1B2B35")
 MUTED = colors.HexColor("#53636C")
