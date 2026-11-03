@@ -139,7 +139,7 @@ function footer() {
         <a href="${escapeHtml(site.cv)}">Public CV (PDF)</a>
         <a href="/publication/">Publications</a>
       </div>
-      <p class="footer-meta">© ${site.copyrightYear} ${escapeHtml(site.name)}<br>Built as a small, accessible static site.</p>
+      <p class="footer-meta">© ${site.copyrightYear} ${escapeHtml(site.name)}</p>
     </div>
   </footer>`;
 }

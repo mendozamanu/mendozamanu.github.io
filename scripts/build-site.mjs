@@ -77,6 +77,8 @@ function copy(source, destination) {
 }
 
 copy("site-src/styles.css", "assets/site.css");
+copy("site-src/libre-baskerville-regular.ttf", "assets/libre-baskerville-regular.ttf");
+copy("site-src/libre-baskerville-bold.ttf", "assets/libre-baskerville-bold.ttf");
 copy("site-src/site.js", "assets/site.js");
 copy("site-src/profile.png", "assets/profile.png");
 if (existsSync(join(root, "site-src", "og.png"))) {
@@ -141,7 +143,6 @@ const homeContent = `
   <div class="shell">
     <div class="section-header">
       <div>
-        <p class="eyebrow">About</p>
         <h2 id="about-title">Machine learning grounded in place.</h2>
       </div>
       <p>My work develops interpretable, transferable methods for learning from mobile-network and geolocated digital traces.</p>
@@ -164,7 +165,6 @@ const homeContent = `
   <div class="shell">
     <div class="section-header">
       <div>
-        <p class="eyebrow">Experience</p>
         <h2 id="experience-title">Research and university teaching.</h2>
       </div>
       <p>Academic and technical experience spanning machine learning research, software engineering and teaching in computer science.</p>
@@ -193,7 +193,6 @@ const homeContent = `
   <div class="shell">
     <div class="section-header">
       <div>
-        <p class="eyebrow">Education</p>
         <h2 id="education-title">Academic background.</h2>
       </div>
       <p>A computing background developed through software engineering, telematics and advanced doctoral research.</p>
@@ -228,7 +227,6 @@ const homeContent = `
   <div class="shell">
     <div class="section-header">
       <div>
-        <p class="eyebrow">Selected research</p>
         <h2 id="recent-title">Mobility, geography and multi-label learning.</h2>
       </div>
       <p>The publication record spans population-pattern identification, cross-border mobility and locally adaptive classification.</p>
@@ -266,7 +264,6 @@ const homeContent = `
 <section class="section section--surface" id="contact" aria-labelledby="contact-title">
   <div class="shell contact-grid">
     <div>
-      <p class="eyebrow">Contact</p>
       <h2 id="contact-title">Let’s talk about research and collaboration.</h2>
       <p>The most reliable way to reach me is through my University of Jaén address.</p>
       <a class="contact-email" href="mailto:${escapeHtml(site.email)}">${escapeHtml(site.email)}</a>
