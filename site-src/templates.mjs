@@ -53,6 +53,7 @@ export function statusBadges(publication) {
     <span class="badge ${statusClass}">${escapeHtml(publication.status)}</span>
     <span class="badge badge--type">${escapeHtml(publication.type)}</span>
     ${publication.openAccess ? '<span class="badge badge--open">Open access</span>' : ""}
+    ${publication.doi ? `<span class="badge" data-crossref-doi="${escapeHtml(publication.doi)}" hidden></span>` : ""}
   </div>`;
 }
 

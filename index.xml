@@ -62,11 +62,11 @@
       <description>A locally adaptive method that selects a different neighbourhood size for each prototype in multi-label k-nearest-neighbour learning.</description>
     </item>
     <item>
-      <title>A new local proximity-based k-nearest neighbours method for multi-label population patterns identification using mobile phone data</title>
+      <title>ML-proxkNN: Interpretable multi-label urban mapping from gridded mobile-network activity</title>
       <link>https://mendozamanu.github.io/publication/ml-proxknn/</link>
       <guid isPermaLink="true">https://mendozamanu.github.io/publication/ml-proxknn/</guid>
       <pubDate>Thu, 01 Jan 2026 12:00:00 GMT</pubDate>
-      <description>A spatially aware multi-label k-nearest-neighbour method that combines feature-space locality with grid adjacency.</description>
+      <description>A multi-label urban mapping method that uses grid adjacency during training to choose local neighbourhood sizes, evaluated on mobile-network data from Milan and Trento.</description>
     </item>
   </channel>
 </rss>

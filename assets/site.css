@@ -711,6 +711,10 @@ p {
   text-transform: uppercase;
 }
 
+.badge[hidden] {
+  display: none;
+}
+
 .badge--published {
   background: color-mix(in srgb, var(--success) 11%, transparent);
   border-color: color-mix(in srgb, var(--success) 30%, transparent);

@@ -2,6 +2,7 @@ import { existsSync, readFileSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { publications, site } from "../site-src/data.mjs";
+import { escapeHtml } from "../site-src/templates.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const errors = [];
@@ -63,6 +64,14 @@ for (const publication of publications) {
       `/publication/${publication.slug}/`,
     ) && publicationArchive.includes(publication.title),
     `Publication archive is missing ${publication.slug}`,
+  );
+  const detail = generatedHtml.find(([route]) => route === `/publication/${publication.slug}/`)?.[1];
+  const crossrefBadge = `data-crossref-doi="${escapeHtml(publication.doi)}" hidden`;
+  assert(
+    publication.doi
+      ? detail?.includes(crossrefBadge) && publicationArchive.includes(crossrefBadge)
+      : detail && !detail.includes("data-crossref-doi"),
+    `Unexpected Crossref citation badge for ${publication.slug}`,
   );
   if (publication.bibtex) {
     const bibtex = join(

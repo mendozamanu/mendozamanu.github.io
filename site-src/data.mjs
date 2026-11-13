@@ -12,7 +12,7 @@ export const site = {
     "Manuel Mendoza Hurtado is a university lecturer and PhD-qualified researcher specialising in human mobility, geospatial machine learning and multi-label learning.",
   searchConsoleVerification: "4GIsBlSV0D_iuNhKqkfmgiy9jSp_yG9Yu9_gJnMTjuM",
   copyrightYear: 2026,
-  assetVersion: "20260725-final-a11y",
+  assetVersion: "20261113-crossref",
   profileImage: "/assets/profile.png",
   analytics: {
     provider: "GoatCounter",
@@ -569,7 +569,7 @@ export const publications = [
   {
     slug: "ml-proxknn",
     title:
-      "A new local proximity-based k-nearest neighbours method for multi-label population patterns identification using mobile phone data",
+      "ML-proxkNN: Interpretable multi-label urban mapping from gridded mobile-network activity",
     authors: ["Manuel Mendoza-Hurtado"],
     authorNote:
       "The complete author list is omitted while the manuscript is under review.",
@@ -582,13 +582,13 @@ export const publications = [
     openAccess: false,
     featured: false,
     summary:
-      "A spatially aware multi-label k-nearest-neighbour method that combines feature-space locality with grid adjacency.",
+      "A multi-label urban mapping method that uses grid adjacency during training to choose local neighbourhood sizes, evaluated on mobile-network data from Milan and Trento.",
     abstract:
-      "ML-proxkNN combines feature-space locality with Moore-neighbourhood relationships in the spatial grid to improve multi-label place identification from call detail records. Experiments on Milan and Trento compare eight multi-label classifiers under standard and spatial block cross-validation. The method achieves strong average precision and F1 scores while retaining its advantage when spatial autocorrelation is controlled, indicating that grid adjacency can improve locally adaptive neighbourhood selection across contrasting geographic contexts.",
+      "Mapping co-occurring urban descriptors, such as residential and workplace activity, built density and land cover, from mobile-network data is difficult when reference labels are scarce and radio coverage blurs grid boundaries. Spatial context can help, but where it enters a classifier matters: weighting neighbours by geographic distance at prediction time smooths the output and can carry labels across genuine boundaries. We present ML-proxkNN, a multi-label nearest-neighbour method that uses Moore-grid adjacency only during training, to select an instance-specific neighbourhood size for each labelled cell. Predictions still rely on neighbours selected by the similarity of hourly activity signatures. We evaluate the method on manually labelled subgrids of 400 cells in Milan and 241 in Trento against nine multi-label baselines, including a geographically weighted kNN, under iterative-stratified and repeated spatial-block cross-validation. ML-proxkNN remains within the leading group of methods without being uniformly superior. It obtains the best average ranks across activity representations on the three ranking-based metrics in both regions, with label-ranking average precision of 0.919 in Milan and 0.904 in Trento, and 0.886 in both regions under spatial blocks. At matched hyperparameters, Moore context yields small non-negative mean gains over feature-only local neighbourhood selection on six of seven metrics; the gains are larger in Trento and grow with the neighbourhood size. Moore context also turns the selected neighbourhood sizes into spatially coherent fields that can be mapped and inspected, while the predicted labels are not smoothed. The most informative activity representation differs between the metropolitan and mountainous settings. Full-grid predictions illustrate co-occurring descriptors for expert inspection and targeted annotation; assessing their accuracy across the full grids requires independent reference labels. The results position selection-time spatial context as a low-cost, interpretable alternative to prediction-time smoothing for urban mapping from aggregated activity data.",
     tags: ["mobility", "multi-label", "classification", "knn"],
     links: [],
     citation:
-      "Mendoza-Hurtado, M. (2026). A new local proximity-based k-nearest neighbours method for multi-label population patterns identification using mobile phone data. Manuscript under review.",
+      "Mendoza-Hurtado, M. (2026). ML-proxkNN: Interpretable multi-label urban mapping from gridded mobile-network activity. Manuscript under review.",
   },
 ];
 
