@@ -180,6 +180,96 @@ export const thesis = {
 
 export const publications = [
   {
+    slug: "milan-distance-metrics",
+    title:
+      "Distance metrics for multi-label urban function and density classification from mobile phone data: A Milan benchmark",
+    authors: [
+      "Manuel Mendoza-Hurtado",
+      "Jose Manuel Cuevas-Muñoz",
+      "Domingo Ortiz-Boyer",
+    ],
+    date: "2026-11-10",
+    year: 2026,
+    venue: "GeoInformatica",
+    publicationDetail: "30(2), Article 37",
+    type: "Journal Article",
+    status: "Published",
+    openAccess: false,
+    featured: false,
+    doi: "10.1007/s10707-026-00598-8",
+    summary:
+      "A Milan benchmark comparing distance metrics for multi-label classification of urban function and density from mobile phone activity.",
+    abstract:
+      "This study compares eleven distance metrics across four multi-label k-nearest-neighbour classifiers using weekly profiles of incoming calls, outgoing calls and internet activity in Milan. The task assigns overlapping home, work and density labels to grid cells. Canberra ranks highest overall among the tested k-nearest-neighbour configurations, while complexity-invariant dynamic time warping performs poorly despite its greater computational cost. With outgoing calls, the local-k classifier using Canberra achieves a ranking loss of 0.095 and an accuracy of 0.742.",
+    tags: ["mobility", "multi-label", "classification", "land-use", "cdr", "knn"],
+    links: [
+      {
+        label: "Article",
+        url: "https://link.springer.com/article/10.1007/s10707-026-00598-8",
+      },
+      { label: "DOI", url: "https://doi.org/10.1007/s10707-026-00598-8" },
+    ],
+    citation:
+      "Mendoza-Hurtado, M., Cuevas-Muñoz, J. M., & Ortiz-Boyer, D. (2026). Distance metrics for multi-label urban function and density classification from mobile phone data: A Milan benchmark. GeoInformatica, 30(2), Article 37. https://doi.org/10.1007/s10707-026-00598-8",
+    bibtex: `@article{mendoza_hurtado_milan_distance_metrics_2026,
+  author = {Mendoza-Hurtado, Manuel and Cuevas-Muñoz, Jose Manuel and Ortiz-Boyer, Domingo},
+  title = {Distance metrics for multi-label urban function and density classification from mobile phone data: A {Milan} benchmark},
+  journal = {GeoInformatica},
+  year = {2026},
+  volume = {30},
+  number = {2},
+  pages = {37},
+  doi = {10.1007/s10707-026-00598-8}
+}`,
+  },
+  {
+    slug: "trento-distance-metrics",
+    title:
+      "A Comparative Analysis of Distance Metrics for Multilabel Land-Use Classification Using Mobile Phone Data in Trento",
+    authors: [
+      "Manuel Mendoza-Hurtado",
+      "Jose Manuel Cuevas-Muñoz",
+      "Domingo Ortiz-Boyer",
+    ],
+    date: "2026-11-07",
+    year: 2026,
+    venue: "Applied Sciences",
+    publicationDetail: "16(21), Article 11040",
+    type: "Journal Article",
+    status: "Published",
+    openAccess: true,
+    featured: false,
+    doi: "10.3390/app162111040",
+    summary:
+      "A comparison of distance metrics for multilabel land-use classification from mobile network activity in Trentino, Italy.",
+    abstract:
+      "This study tests eleven distance metrics with four multilabel k-nearest-neighbour classifiers on weekly profiles of incoming calls, outgoing calls and internet activity from 241 manually labelled cells in Trentino. It uses four other classifiers as baselines. Canberra-family distances perform well in several classifier and activity combinations. For incoming calls, ML-localkNN reaches an average precision of 0.905 and a ranking loss of 0.125. The results also show that complexity correction can help or hurt depending on the classifier and activity data.",
+    tags: ["mobility", "multi-label", "classification", "land-use", "cdr", "knn"],
+    links: [
+      {
+        label: "Article",
+        url: "https://www.mdpi.com/2076-3417/16/21/11040",
+      },
+      {
+        label: "PDF",
+        url: "https://mdpi-res.com/d_attachment/applsci/applsci-16-11040/article_deploy/applsci-16-11040.pdf",
+      },
+      { label: "DOI", url: "https://doi.org/10.3390/app162111040" },
+    ],
+    citation:
+      "Mendoza-Hurtado, M., Cuevas-Muñoz, J. M., & Ortiz-Boyer, D. (2026). A Comparative Analysis of Distance Metrics for Multilabel Land-Use Classification Using Mobile Phone Data in Trento. Applied Sciences, 16(21), Article 11040. https://doi.org/10.3390/app162111040",
+    bibtex: `@article{mendoza_hurtado_trento_distance_metrics_2026,
+  author = {Mendoza-Hurtado, Manuel and Cuevas-Muñoz, Jose Manuel and Ortiz-Boyer, Domingo},
+  title = {A Comparative Analysis of Distance Metrics for Multilabel Land-Use Classification Using Mobile Phone Data in {Trento}},
+  journal = {Applied Sciences},
+  year = {2026},
+  volume = {16},
+  number = {21},
+  pages = {11040},
+  doi = {10.3390/app162111040}
+}`,
+  },
+  {
     slug: "maplid",
     title:
       "MAPLID: a new multi-label approach for place identification using data supplied by mobile network operators",
