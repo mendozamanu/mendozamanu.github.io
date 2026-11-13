@@ -59,7 +59,7 @@ def footer(canvas, doc):
     canvas.drawString(
         MARGIN_X,
         7 * mm,
-        "Public academic CV - Updated 25 July 2026",
+        "Public academic CV - Updated 13 November 2026",
     )
     canvas.drawRightString(
         PAGE_W - MARGIN_X,
@@ -354,6 +354,22 @@ def build_story():
         [
             publication_item(
                 1,
+                "Mendoza-Hurtado, M.; Cuevas-Muñoz, J. M.; Ortiz-Boyer, D. (2026). "
+                "<b>Distance metrics for multi-label urban function and density "
+                "classification from mobile phone data: A Milan benchmark.</b> "
+                "<i>GeoInformatica</i>, 30(2), 37.",
+                "10.1007/s10707-026-00598-8",
+            ),
+            publication_item(
+                2,
+                "Mendoza-Hurtado, M.; Cuevas-Muñoz, J. M.; Ortiz-Boyer, D. (2026). "
+                "<b>A Comparative Analysis of Distance Metrics for Multilabel "
+                "Land-Use Classification Using Mobile Phone Data in Trento.</b> "
+                "<i>Applied Sciences</i>, 16(21), 11040.",
+                "10.3390/app162111040",
+            ),
+            publication_item(
+                3,
                 "Mendoza-Hurtado, M.; Romero-del-Castillo, J. A.; Ortiz-Boyer, D. "
                 "(2026). <b>MAPLID: a new multi-label approach for place "
                 "identification using data supplied by mobile network operators.</b> "
@@ -362,7 +378,7 @@ def build_story():
                 "10.1080/13658816.2026.2617932",
             ),
             publication_item(
-                2,
+                4,
                 "García-Pedrajas, N. E.; Cuevas-Muñoz, J. M.; Mendoza-Hurtado, M.; "
                 "Pérez-Rodríguez, J.; de Haro-García, A. (2026). <b>False flag: "
                 "An evolutionary false labeling approach for multilabel "
@@ -370,7 +386,7 @@ def build_story():
                 "10.1016/j.asoc.2026.114912",
             ),
             publication_item(
-                3,
+                5,
                 "Mendoza-Hurtado, M.; Järv, O.; Malekzadeh, M.; Karasov, O.; "
                 "Ortiz-Boyer, D. (2026). <b>Sensing labour mobility flows of "
                 "cross-border urban regions using machine learning and geolocated "
@@ -378,7 +394,7 @@ def build_story():
                 "10.1140/epjds/s13688-026-00662-1",
             ),
             publication_item(
-                4,
+                6,
                 "Mendoza-Hurtado, M.; Cerruela-García, G.; Ortiz-Boyer, D. (2025). "
                 "<b>A supervised approach for land use identification in Trento "
                 "using mobile phone data as an alternative to unsupervised clustering "
@@ -386,7 +402,7 @@ def build_story():
                 "10.3390/app15041753",
             ),
             publication_item(
-                5,
+                7,
                 "Mendoza-Hurtado, M.; Romero-del-Castillo, J. A.; Ortiz-Boyer, D. "
                 "(2024). <b>SAMPLID: A new supervised approach for meaningful place "
                 "identification using call detail records as an alternative to "
@@ -395,7 +411,7 @@ def build_story():
                 "10.3390/ijgi13080289",
             ),
             publication_item(
-                6,
+                8,
                 "Romero-del-Castillo, J. A.; Mendoza-Hurtado, M.; Ortiz-Boyer, D.; "
                 "García-Pedrajas, N. (2022). <b>Local-based k values for multi-label "
                 "k-nearest neighbors rule.</b> <i>Engineering Applications of "
@@ -409,9 +425,19 @@ def build_story():
     story.extend(
         [
             p(
+                "<b>Demand-Weighted Reliability and Diagnostic Observability in "
+                "Public Transport: A Multi-Source Alignment Approach.</b> "
+                "NetMob 2026, Niterói, Brazil. "
+                '<link href="https://netmob.org/www26/files/NetMob26_Book_of_Abstracts.pdf" '
+                'color="#087F83">Book of abstracts</link>.',
+                small,
+            ),
+            p(
                 "<b>Dual-locality learning under neighbourhood coupling: interpretable "
                 "and transferable models for structured trace data.</b> Fourth General "
-                "Meeting, COSY COST Action CA21101, Spain, 2026.",
+                "Meeting, COSY COST Action CA21101, Spain, 2026. "
+                '<link href="https://fourth-general-meeting.cost-cosy.eu/wp-content/uploads/2026/04/BoA_4thGM_final.pdf" '
+                'color="#087F83">Book of abstracts</link>.',
                 small,
             ),
             p(
